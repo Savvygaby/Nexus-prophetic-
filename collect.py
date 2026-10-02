@@ -53,6 +53,12 @@ for ser in WANT:
     if k is None:
         time.sleep(3); k = get(f'https://api.elections.kalshi.com/trade-api/v2/events?series_ticker={ser}&with_nested_markets=true&status=open&limit=200', f'kalshi_{ser}_retry')
     if k: save(f'kalshi/{ser}.json', k)
+# Polymarket (keyless gamma API): sports events with all their markets (moneyline, spreads, totals, props if listed)
+for tag in ('nfl', 'mlb'):
+    for off in (0, 500):
+        pm = get(f'https://gamma-api.polymarket.com/events?tag_slug={tag}&active=true&closed=false&limit=500&offset={off}', f'poly_{tag}_{off}')
+        if pm: save(f'polymarket/{tag}_{off}.json', pm)
+        if not pm or len(pm) < 500: break
 for lg, path in (('nfl', 'football/nfl'), ('mlb', 'baseball/mlb')):
     b = get(f'https://www.bovada.lv/services/sports/event/coupon/events/A/description/{path}?marketFilterId=def&preMatchOnly=true&lang=en', f'bovada_{lg}')
     if b: save(f'bovada/{lg}.json', b)
