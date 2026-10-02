@@ -18,6 +18,7 @@ jobs:
       - name: Collect odds
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDSKEY: ${{ secrets.ODDSKEY }}
         run: python collect.py
       - name: Commit
         run: |
