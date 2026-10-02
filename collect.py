@@ -1,7 +1,7 @@
 """Odds collector run by GitHub Actions (GitHub's servers can reach the sportsbooks; the analysis workspace cannot).
 Saves raw JSON from The Odds API (NFL + MLB: game lines, player props incl. alternates, F5), plus keyless Kalshi and Bovada feeds."""
 import json, os, time, urllib.request, urllib.parse, datetime as dt
-KEY = (os.environ.get('ODDS_API_KEY') or os.environ.get('ODDSKEY') or '').strip()
+KEY = (os.environ.get('ODDS_API_KEY') or os.environ.get('ODDSKEY') or os.environ.get('ODDSAPI') or '').strip()
 REQ = json.load(open('request.json')) if os.path.exists('request.json') else {}
 OUT = 'odds'; os.makedirs(OUT, exist_ok=True)
 LOG = {'started': dt.datetime.utcnow().isoformat() + 'Z', 'calls': [], 'errors': [], 'key_present': bool(KEY), 'key_len': len(KEY)}
