@@ -43,7 +43,13 @@ for sp, cfg in SPORTS.items():
             p = get(f"{API}/{cfg['key']}/events/{eid}/odds?apiKey={KEY}&regions=us&markets={mk}&oddsFormat=decimal", f'{sp}_props_{eid}_{i}')
             if p: save(f'{sp}/props_{eid}_{i}.json', p)
 # keyless: Kalshi game markets, Bovada coupons
-for ser in ('KXNFLGAME', 'KXMLBGAME'):
+ser_list = get('https://api.elections.kalshi.com/trade-api/v2/series?category=Sports&limit=1000', 'kalshi_series')
+if ser_list: save('kalshi/series.json', ser_list)
+WANT = ['KXNFLGAME', 'KXMLBGAME']
+for s_ in (ser_list or {}).get('series', []):
+    t = s_.get('ticker', '')
+    if (t.startswith('KXNFL') or t.startswith('KXMLB')) and t not in WANT: WANT.append(t)
+for ser in WANT[:60]:
     k = get(f'https://api.elections.kalshi.com/trade-api/v2/events?series_ticker={ser}&with_nested_markets=true&status=open&limit=200', f'kalshi_{ser}')
     if k: save(f'kalshi/{ser}.json', k)
 for lg, path in (('nfl', 'football/nfl'), ('mlb', 'baseball/mlb')):
