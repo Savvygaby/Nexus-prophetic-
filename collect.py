@@ -66,3 +66,19 @@ for lg, path in (('nfl', 'football/nfl'), ('mlb', 'baseball/mlb')):
 LOG['finished'] = dt.datetime.utcnow().isoformat() + 'Z'
 save('manifest.json', LOG)
 print(json.dumps({k: (v if k != 'calls' else len(v)) for k, v in LOG.items()}, indent=1)[:3000])
+
+# ---------------- historical props mode (request.json: {"historical": {"sport": ..., "list_dates": [...], "markets": "...", "days": 5}})
+HIST = REQ.get('historical')
+if HIST and KEY:
+    sp = HIST['sport']; mk = HIST['markets']; tag = HIST.get('tag', 'hist')
+    for ld in HIST['list_dates']:
+        evs = get(f'https://api.the-odds-api.com/v4/historical/sports/{sp}/events?apiKey={KEY}&date={ld}', f'hist_events_{ld}')
+        if not evs: continue
+        t0 = dt.datetime.strptime(ld, '%Y-%m-%dT%H:%M:%SZ')
+        for e in evs.get('data', []):
+            ct = dt.datetime.strptime(e['commence_time'], '%Y-%m-%dT%H:%M:%SZ')
+            if ct < t0 or ct > t0 + dt.timedelta(days=HIST.get('days', 5)): continue
+            snap = (ct - dt.timedelta(hours=1)).strftime('%Y-%m-%dT%H:%M:%SZ')
+            o = get(f"https://api.the-odds-api.com/v4/historical/sports/{sp}/events/{e['id']}/odds?apiKey={KEY}&regions=us&markets={mk}&oddsFormat=decimal&date={snap}", f"hist_{e['id']}")
+            if o: save(f"{tag}/{e['id']}.json", o)
+    LOG['finished_hist'] = dt.datetime.utcnow().isoformat() + 'Z'; save('manifest.json', LOG)
