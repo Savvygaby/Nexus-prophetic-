@@ -55,10 +55,11 @@ for ser in WANT:
     if k: save(f'kalshi/{ser}.json', k)
 # Polymarket (keyless gamma API): sports events with all their markets (moneyline, spreads, totals, props if listed)
 for tag in ('nfl', 'mlb'):
-    for off in (0, 500):
-        pm = get(f'https://gamma-api.polymarket.com/events?tag_slug={tag}&active=true&closed=false&limit=500&offset={off}', f'poly_{tag}_{off}')
+    for off in range(0, 1500, 100):
+        time.sleep(0.3)
+        pm = get(f'https://gamma-api.polymarket.com/events?tag_slug={tag}&active=true&closed=false&limit=100&offset={off}', f'poly_{tag}_{off}')
         if pm: save(f'polymarket/{tag}_{off}.json', pm)
-        if not pm or len(pm) < 500: break
+        if not pm or len(pm) < 100: break
 for lg, path in (('nfl', 'football/nfl'), ('mlb', 'baseball/mlb')):
     b = get(f'https://www.bovada.lv/services/sports/event/coupon/events/A/description/{path}?marketFilterId=def&preMatchOnly=true&lang=en', f'bovada_{lg}')
     if b: save(f'bovada/{lg}.json', b)
