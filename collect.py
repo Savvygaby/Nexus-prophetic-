@@ -4,7 +4,7 @@ import json, os, time, urllib.request, urllib.parse, datetime as dt
 KEY = os.environ.get('ODDS_API_KEY', '')
 REQ = json.load(open('request.json')) if os.path.exists('request.json') else {}
 OUT = 'odds'; os.makedirs(OUT, exist_ok=True)
-LOG = {'started': dt.datetime.utcnow().isoformat() + 'Z', 'calls': [], 'errors': []}
+LOG = {'started': dt.datetime.utcnow().isoformat() + 'Z', 'calls': [], 'errors': [], 'key_present': bool(KEY), 'key_len': len(KEY)}
 def get(url, tag):
     try:
         r = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=40)
@@ -48,7 +48,10 @@ WANT = ['KXNFLGAME', 'KXNFLSPREAD', 'KXNFLTOTAL', 'KXNFLTD', 'KXNFLANYTD', 'KXNF
         'KXMLBGAME', 'KXMLBSPREAD', 'KXMLBTOTAL', 'KXMLBF5', 'KXMLBF5TOTAL', 'KXMLBF5SPREAD', 'KXMLBTEAMTOTAL', 'KXMLBKS', 'KXMLBHIT', 'KXMLBTB', 'KXMLBHR', 'KXMLBHRR',
         'KXMLBRBI', 'KXMLBOUTS', 'KXMLBSB', 'KXMLBWALK', 'KXMLBRFI', 'KXMLBERA', 'KXMLBHA', 'KXMLBWA', 'KXMLBSTAT', 'KXMLBPITCH', 'KXMLBSS', 'KXMLBSERIES']
 for ser in WANT:
+    time.sleep(0.6)
     k = get(f'https://api.elections.kalshi.com/trade-api/v2/events?series_ticker={ser}&with_nested_markets=true&status=open&limit=200', f'kalshi_{ser}')
+    if k is None:
+        time.sleep(3); k = get(f'https://api.elections.kalshi.com/trade-api/v2/events?series_ticker={ser}&with_nested_markets=true&status=open&limit=200', f'kalshi_{ser}_retry')
     if k: save(f'kalshi/{ser}.json', k)
 for lg, path in (('nfl', 'football/nfl'), ('mlb', 'baseball/mlb')):
     b = get(f'https://www.bovada.lv/services/sports/event/coupon/events/A/description/{path}?marketFilterId=def&preMatchOnly=true&lang=en', f'bovada_{lg}')
