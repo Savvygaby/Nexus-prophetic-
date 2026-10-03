@@ -5,7 +5,7 @@ KEY = (os.environ.get('ODDS_API_KEY') or os.environ.get('ODDSKEY') or os.environ
 REQ = json.load(open('request.json')) if os.path.exists('request.json') else {}
 OUT = 'odds'; os.makedirs(OUT, exist_ok=True)
 LOG = {'started': dt.datetime.utcnow().isoformat() + 'Z', 'calls': [], 'errors': [], 'key_present': bool(KEY), 'key_len': len(KEY)}
-def get(url, tag, timeout=40):
+def get(url, tag, timeout=25):
     try:
         r = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=timeout)
         body = r.read(); LOG['calls'].append(dict(tag=tag, status=r.status, remaining=r.headers.get('x-requests-remaining'), used=r.headers.get('x-requests-used')))
@@ -141,40 +141,6 @@ if REQ.get('bat_tracking'):
             except Exception as ex: LOG['errors'].append(dict(tag=f'bat_{yr}', err=str(ex)[:150]))
 save('manifest.json', LOG)
 
-# ======================= sentiment / attention (request.json 'sentiment': {...}) =======================
-SEN = REQ.get('sentiment')
-if SEN:
-    names = [l.strip() for l in open('players.txt') if l.strip()][:SEN.get('max', 500)]
-    s0, s1 = SEN['start'], SEN['end']          # YYYYMMDDHHMMSS
-    t_start = time.time()
-    for i, nm in enumerate(names):
-        if time.time() - t_start > SEN.get('budget_min', 50) * 60: LOG['errors'].append(dict(tag='gdelt_budget', err=f'stopped after {i} players')); break
-        q = urllib.parse.quote(f'"{nm}"')
-        for mode in SEN.get('modes', ['timelinevolraw', 'timelinetone']):
-            time.sleep(5.5)
-            extra = '&maxrecords=250&sort=datedesc' if mode == 'artlist' else ''
-            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json{extra}', f'gdelt_{mode}_{i}', timeout=20)
-            if d: save(f'sentiment/gdelt/{mode}/{nm.replace(" ", "_").replace("/", "")}.json', d)
-    # Google Trends (unofficial, may be rate-limited from cloud IPs) - small probe
-    try:
-        if not SEN.get('trends', True): raise RuntimeError('trends off')
-        import subprocess; subprocess.run(['pip', 'install', '-q', 'pytrends'], check=False)
-        from pytrends.request import TrendReq
-        tr = TrendReq(hl='en-US', tz=240); res = {}
-        for j in range(0, min(len(names), SEN.get('trends_max', 60)), 5):
-            kw = names[j:j + 5]
-            try:
-                tr.build_payload(kw, timeframe=SEN.get('trends_tf', 'today 3-m'), geo='US'); df_ = tr.interest_over_time()
-                res.update({k: df_[k].reset_index().astype(str).values.tolist() for k in kw if k in df_})
-            except Exception as ex: LOG['errors'].append(dict(tag=f'trends_{j}', err=str(ex)[:150])); break
-            time.sleep(8)
-        save('sentiment/google_trends.json', res)
-    except Exception as ex: LOG['errors'].append(dict(tag='trends', err=str(ex)[:150]))
-    # Reddit public search JSON (often blocked for cloud IPs) - probe
-    rr = get('https://www.reddit.com/r/fantasyfootball/search.json?q=injury&restrict_sr=1&sort=new&limit=25', 'reddit_probe')
-    if rr: save('sentiment/reddit_probe.json', rr)
-    save('manifest.json', LOG)
-
 # ======================= MLB fresh data (request.json 'mlb_fresh': true) =======================
 if REQ.get('mlb_fresh'):
     # MLB StatsAPI: probable pitchers + posted lineups for the next 4 days
@@ -192,6 +158,13 @@ if REQ.get('mlb_fresh'):
     except Exception as ex: LOG['errors'].append(dict(tag='pybaseball', err=str(ex)[:200]))
     save('manifest.json', LOG)
 
+
+# ======================= StatsAPI schedule for a date range (maps game_pk <-> teams for backtests) =======================
+if REQ.get('mlb_sched_range'):
+    a, b = REQ['mlb_sched_range']
+    s_ = get(f'https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={a}&endDate={b}', 'mlb_sched_range')
+    if s_: save(f'mlb/schedule_{a}_{b}.json', s_)
+    save('manifest.json', LOG)
 
 # ======================= Reddit via PRAW + VADER (needs secrets REDDITID / REDDITSECRET / REDDITAGENT) =======================
 RD = REQ.get('reddit')
@@ -232,6 +205,40 @@ if RD:
         except Exception as ex: LOG['errors'].append(dict(tag='reddit', err=str(ex)[:200]))
     save('manifest.json', LOG)
 
+# ======================= sentiment / attention (request.json 'sentiment': {...}) =======================
+SEN = REQ.get('sentiment')
+if SEN:
+    names = [l.strip() for l in open('players.txt') if l.strip()][:SEN.get('max', 500)]
+    s0, s1 = SEN['start'], SEN['end']          # YYYYMMDDHHMMSS
+    t_start = time.time()
+    for i, nm in enumerate(names):
+        if time.time() - t_start > SEN.get('budget_min', 50) * 60: LOG['errors'].append(dict(tag='gdelt_budget', err=f'stopped after {i} players')); break
+        q = urllib.parse.quote(f'"{nm}"')
+        for mode in SEN.get('modes', ['timelinevolraw', 'timelinetone']):
+            time.sleep(5.5)
+            extra = '&maxrecords=250&sort=datedesc' if mode == 'artlist' else ''
+            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json{extra}', f'gdelt_{mode}_{i}', timeout=20)
+            if d: save(f'sentiment/gdelt/{mode}/{nm.replace(" ", "_").replace("/", "")}.json', d)
+    # Google Trends (unofficial, may be rate-limited from cloud IPs) - small probe
+    try:
+        if not SEN.get('trends', True): raise RuntimeError('trends off')
+        import subprocess; subprocess.run(['pip', 'install', '-q', 'pytrends'], check=False)
+        from pytrends.request import TrendReq
+        tr = TrendReq(hl='en-US', tz=240); res = {}
+        for j in range(0, min(len(names), SEN.get('trends_max', 60)), 5):
+            kw = names[j:j + 5]
+            try:
+                tr.build_payload(kw, timeframe=SEN.get('trends_tf', 'today 3-m'), geo='US'); df_ = tr.interest_over_time()
+                res.update({k: df_[k].reset_index().astype(str).values.tolist() for k in kw if k in df_})
+            except Exception as ex: LOG['errors'].append(dict(tag=f'trends_{j}', err=str(ex)[:150])); break
+            time.sleep(8)
+        save('sentiment/google_trends.json', res)
+    except Exception as ex: LOG['errors'].append(dict(tag='trends', err=str(ex)[:150]))
+    # Reddit public search JSON (often blocked for cloud IPs) - probe
+    rr = get('https://www.reddit.com/r/fantasyfootball/search.json?q=injury&restrict_sr=1&sort=new&limit=25', 'reddit_probe')
+    if rr: save('sentiment/reddit_probe.json', rr)
+    save('manifest.json', LOG)
+
 # ======================= VADER on GDELT headlines (artlist), separates injury news from tone =======================
 if SEN and 'artlist' in SEN.get('modes', []):
     try:
@@ -247,9 +254,3 @@ if SEN and 'artlist' in SEN.get('modes', []):
     except Exception as ex: LOG['errors'].append(dict(tag='vader_gdelt', err=str(ex)[:150]))
     save('manifest.json', LOG)
 
-# ======================= StatsAPI schedule for a date range (maps game_pk <-> teams for backtests) =======================
-if REQ.get('mlb_sched_range'):
-    a, b = REQ['mlb_sched_range']
-    s_ = get(f'https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={a}&endDate={b}', 'mlb_sched_range')
-    if s_: save(f'mlb/schedule_{a}_{b}.json', s_)
-    save('manifest.json', LOG)

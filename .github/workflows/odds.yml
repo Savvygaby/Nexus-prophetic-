@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: "3.11"
       - name: Collect odds
+        timeout-minutes: 120
+        continue-on-error: true
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDSKEY: ${{ secrets.ODDSKEY }}
@@ -25,6 +27,7 @@ jobs:
           REDDITAGENT: ${{ secrets.REDDITAGENT }}
         run: python collect.py
       - name: Commit
+        if: always()
         run: |
           git config user.name "odds-bot"
           git config user.email "odds-bot@users.noreply.github.com"
