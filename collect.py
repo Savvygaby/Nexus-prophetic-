@@ -140,3 +140,33 @@ if REQ.get('bat_tracking'):
                     os.makedirs(f'{OUT}/savant', exist_ok=True); open(f'{OUT}/savant/bat_tracking_{yr}.csv', 'w').write(r); LOG['calls'].append(dict(tag=f'bat_{yr}', status=200)); break
             except Exception as ex: LOG['errors'].append(dict(tag=f'bat_{yr}', err=str(ex)[:150]))
 save('manifest.json', LOG)
+
+# ======================= sentiment / attention (request.json 'sentiment': {...}) =======================
+SEN = REQ.get('sentiment')
+if SEN:
+    names = [l.strip() for l in open('players.txt') if l.strip()][:SEN.get('max', 500)]
+    s0, s1 = SEN['start'], SEN['end']          # YYYYMMDDHHMMSS
+    for i, nm in enumerate(names):
+        q = urllib.parse.quote(f'"{nm}"')
+        for mode in ('timelinevolraw', 'timelinetone'):
+            time.sleep(5.5)
+            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json', f'gdelt_{mode}_{i}')
+            if d: save(f'sentiment/gdelt/{mode}/{nm.replace(" ", "_").replace("/", "")}.json', d)
+    # Google Trends (unofficial, may be rate-limited from cloud IPs) - small probe
+    try:
+        import subprocess; subprocess.run(['pip', 'install', '-q', 'pytrends'], check=False)
+        from pytrends.request import TrendReq
+        tr = TrendReq(hl='en-US', tz=240); res = {}
+        for j in range(0, min(len(names), SEN.get('trends_max', 60)), 5):
+            kw = names[j:j + 5]
+            try:
+                tr.build_payload(kw, timeframe=SEN.get('trends_tf', 'today 3-m'), geo='US'); df_ = tr.interest_over_time()
+                res.update({k: df_[k].reset_index().astype(str).values.tolist() for k in kw if k in df_})
+            except Exception as ex: LOG['errors'].append(dict(tag=f'trends_{j}', err=str(ex)[:150])); break
+            time.sleep(8)
+        save('sentiment/google_trends.json', res)
+    except Exception as ex: LOG['errors'].append(dict(tag='trends', err=str(ex)[:150]))
+    # Reddit public search JSON (often blocked for cloud IPs) - probe
+    rr = get('https://www.reddit.com/r/fantasyfootball/search.json?q=injury&restrict_sr=1&sort=new&limit=25', 'reddit_probe')
+    if rr: save('sentiment/reddit_probe.json', rr)
+    save('manifest.json', LOG)
