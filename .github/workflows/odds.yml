@@ -20,6 +20,9 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDSKEY: ${{ secrets.ODDSKEY }}
           ODDSAPI: ${{ secrets.ODDSAPI }}
+          REDDITID: ${{ secrets.REDDITID }}
+          REDDITSECRET: ${{ secrets.REDDITSECRET }}
+          REDDITAGENT: ${{ secrets.REDDITAGENT }}
         run: python collect.py
       - name: Commit
         run: |

@@ -148,12 +148,14 @@ if SEN:
     s0, s1 = SEN['start'], SEN['end']          # YYYYMMDDHHMMSS
     for i, nm in enumerate(names):
         q = urllib.parse.quote(f'"{nm}"')
-        for mode in ('timelinevolraw', 'timelinetone'):
+        for mode in SEN.get('modes', ['timelinevolraw', 'timelinetone']):
             time.sleep(5.5)
-            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json', f'gdelt_{mode}_{i}')
+            extra = '&maxrecords=250&sort=datedesc' if mode == 'artlist' else ''
+            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json{extra}', f'gdelt_{mode}_{i}')
             if d: save(f'sentiment/gdelt/{mode}/{nm.replace(" ", "_").replace("/", "")}.json', d)
     # Google Trends (unofficial, may be rate-limited from cloud IPs) - small probe
     try:
+        if not SEN.get('trends', True): raise RuntimeError('trends off')
         import subprocess; subprocess.run(['pip', 'install', '-q', 'pytrends'], check=False)
         from pytrends.request import TrendReq
         tr = TrendReq(hl='en-US', tz=240); res = {}
@@ -186,4 +188,59 @@ if REQ.get('mlb_fresh'):
                             'sz_top', 'sz_bot', 'balls', 'strikes', 'launch_speed', 'launch_angle', 'bat_speed', 'swing_length', 'home_team', 'away_team', 'inning_topbot', 'game_type'] if c in sc.columns]
         os.makedirs(f'{OUT}/mlb', exist_ok=True); sc[keep].to_csv(f'{OUT}/mlb/statcast_recent.csv.gz', index=False, compression='gzip'); LOG['calls'].append(dict(tag='statcast', rows=len(sc)))
     except Exception as ex: LOG['errors'].append(dict(tag='pybaseball', err=str(ex)[:200]))
+    save('manifest.json', LOG)
+
+
+# ======================= Reddit via PRAW + VADER (needs secrets REDDITID / REDDITSECRET / REDDITAGENT) =======================
+RD = REQ.get('reddit')
+if RD:
+    rid, rsec, rag = os.environ.get('REDDITID', '').strip(), os.environ.get('REDDITSECRET', '').strip(), os.environ.get('REDDITAGENT', 'sports-model').strip()
+    LOG['reddit_creds'] = bool(rid and rsec)
+    if rid and rsec:
+        try:
+            import subprocess; subprocess.run(['pip', 'install', '-q', 'praw', 'vaderSentiment'], check=False)
+            import praw
+            from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+            sia = SentimentIntensityAnalyzer()
+            # sports slang the base lexicon misreads (positive in sports context)
+            sia.lexicon.update({'beast': 2.0, 'cooking': 1.5, 'sleeper': 1.0, 'smash': 1.5, 'stud': 2.0, 'locked': 1.0, 'nuke': 1.5, 'bust': -2.0, 'dud': -2.0, 'questionable': -0.8, 'limited': -0.8, 'dnp': -1.5})
+            reddit = praw.Reddit(client_id=rid, client_secret=rsec, user_agent=rag)
+            out = {}
+            for grp in RD.get('groups', []):
+                names = [l.strip() for l in open(grp['names_file']) if l.strip()][:grp.get('max', 300)]
+                for nm in names:
+                    last = nm.split()[-1]; rows = []
+                    for sub in grp['subs']:
+                        try:
+                            for post in reddit.subreddit(sub).search(f'"{nm}"', sort='new', time_filter=RD.get('time_filter', 'month'), limit=RD.get('limit', 40)):
+                                txt = (post.title or '') + ' ' + (post.selftext or '')[:1500]
+                                rows.append(dict(t=int(post.created_utc), sub=sub, score=post.score, ncom=post.num_comments, kind='post',
+                                                 s=sia.polarity_scores(txt)['compound'], inj=int(any(w in txt.lower() for w in ('injur', 'hamstring', 'ankle', 'knee', 'questionable', 'out for', 'ruled out', 'limited', 'dnp', 'il '))),
+                                                 title=(post.title or '')[:140]))
+                                post.comment_sort = 'top'; post.comments.replace_more(limit=0)
+                                for c in post.comments[:15]:
+                                    b = c.body or ''
+                                    if last.lower() in b.lower():          # only comments about THIS player (avoid opponent/other-player sentiment)
+                                        rows.append(dict(t=int(c.created_utc), sub=sub, score=c.score, kind='comment', s=sia.polarity_scores(b[:800])['compound'],
+                                                         inj=int(any(w in b.lower() for w in ('injur', 'hamstring', 'questionable', 'ruled out', 'limited')))))
+                            time.sleep(0.7)
+                        except Exception as ex: LOG['errors'].append(dict(tag=f'reddit_{sub}_{nm}', err=str(ex)[:120]))
+                    out[nm] = rows
+            save('sentiment/reddit_vader.json', out); LOG['calls'].append(dict(tag='reddit', players=len(out)))
+        except Exception as ex: LOG['errors'].append(dict(tag='reddit', err=str(ex)[:200]))
+    save('manifest.json', LOG)
+
+# ======================= VADER on GDELT headlines (artlist), separates injury news from tone =======================
+if SEN and 'artlist' in SEN.get('modes', []):
+    try:
+        import subprocess; subprocess.run(['pip', 'install', '-q', 'vaderSentiment'], check=False)
+        from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+        sia = SentimentIntensityAnalyzer(); agg = {}
+        for f in glob.glob(f'{OUT}/sentiment/gdelt/artlist/*.json'):
+            d = json.load(open(f)); nm = os.path.basename(f)[:-5].replace('_', ' ')
+            agg[nm] = [dict(t=a.get('seendate'), s=sia.polarity_scores(a.get('title', ''))['compound'],
+                            inj=int(any(w in (a.get('title', '').lower()) for w in ('injur', 'hamstring', 'ankle', 'knee', 'questionable', 'ruled out', 'limited', 'surgery', 'concussion'))),
+                            dom=a.get('domain')) for a in d.get('articles', [])]
+        save('sentiment/gdelt_vader.json', agg)
+    except Exception as ex: LOG['errors'].append(dict(tag='vader_gdelt', err=str(ex)[:150]))
     save('manifest.json', LOG)
