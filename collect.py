@@ -244,3 +244,10 @@ if SEN and 'artlist' in SEN.get('modes', []):
         save('sentiment/gdelt_vader.json', agg)
     except Exception as ex: LOG['errors'].append(dict(tag='vader_gdelt', err=str(ex)[:150]))
     save('manifest.json', LOG)
+
+# ======================= StatsAPI schedule for a date range (maps game_pk <-> teams for backtests) =======================
+if REQ.get('mlb_sched_range'):
+    a, b = REQ['mlb_sched_range']
+    s_ = get(f'https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={a}&endDate={b}', 'mlb_sched_range')
+    if s_: save(f'mlb/schedule_{a}_{b}.json', s_)
+    save('manifest.json', LOG)
