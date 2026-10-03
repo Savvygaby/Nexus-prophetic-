@@ -170,3 +170,20 @@ if SEN:
     rr = get('https://www.reddit.com/r/fantasyfootball/search.json?q=injury&restrict_sr=1&sort=new&limit=25', 'reddit_probe')
     if rr: save('sentiment/reddit_probe.json', rr)
     save('manifest.json', LOG)
+
+# ======================= MLB fresh data (request.json 'mlb_fresh': true) =======================
+if REQ.get('mlb_fresh'):
+    # MLB StatsAPI: probable pitchers + posted lineups for the next 4 days
+    d0 = dt.datetime.utcnow().strftime('%Y-%m-%d'); d1 = (dt.datetime.utcnow() + dt.timedelta(days=4)).strftime('%Y-%m-%d')
+    sch = get(f'https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate={d0}&endDate={d1}&hydrate=probablePitcher,lineups,officials,weather,venue', 'mlb_sched_fwd')
+    if sch: save('mlb/schedule_forward.json', sch)
+    # pybaseball: Statcast pitch-level since our sportsdataverse copy ends (fills the ~3-week lag), + sprint speed
+    try:
+        import subprocess; subprocess.run(['pip', 'install', '-q', 'pybaseball'], check=False)
+        import pybaseball as pb; pb.cache.enable()
+        sc = pb.statcast(start_dt=REQ.get('statcast_start', '2026-09-01'), end_dt=d0)
+        keep = [c for c in ['game_date', 'game_pk', 'at_bat_number', 'pitch_number', 'batter', 'pitcher', 'events', 'description', 'pitch_type', 'release_speed', 'plate_x', 'plate_z',
+                            'sz_top', 'sz_bot', 'balls', 'strikes', 'launch_speed', 'launch_angle', 'bat_speed', 'swing_length', 'home_team', 'away_team', 'inning_topbot', 'game_type'] if c in sc.columns]
+        os.makedirs(f'{OUT}/mlb', exist_ok=True); sc[keep].to_csv(f'{OUT}/mlb/statcast_recent.csv.gz', index=False, compression='gzip'); LOG['calls'].append(dict(tag='statcast', rows=len(sc)))
+    except Exception as ex: LOG['errors'].append(dict(tag='pybaseball', err=str(ex)[:200]))
+    save('manifest.json', LOG)
