@@ -5,9 +5,9 @@ KEY = (os.environ.get('ODDS_API_KEY') or os.environ.get('ODDSKEY') or os.environ
 REQ = json.load(open('request.json')) if os.path.exists('request.json') else {}
 OUT = 'odds'; os.makedirs(OUT, exist_ok=True)
 LOG = {'started': dt.datetime.utcnow().isoformat() + 'Z', 'calls': [], 'errors': [], 'key_present': bool(KEY), 'key_len': len(KEY)}
-def get(url, tag):
+def get(url, tag, timeout=40):
     try:
-        r = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=40)
+        r = urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}), timeout=timeout)
         body = r.read(); LOG['calls'].append(dict(tag=tag, status=r.status, remaining=r.headers.get('x-requests-remaining'), used=r.headers.get('x-requests-used')))
         return json.loads(body)
     except Exception as e:
@@ -146,12 +146,14 @@ SEN = REQ.get('sentiment')
 if SEN:
     names = [l.strip() for l in open('players.txt') if l.strip()][:SEN.get('max', 500)]
     s0, s1 = SEN['start'], SEN['end']          # YYYYMMDDHHMMSS
+    t_start = time.time()
     for i, nm in enumerate(names):
+        if time.time() - t_start > SEN.get('budget_min', 50) * 60: LOG['errors'].append(dict(tag='gdelt_budget', err=f'stopped after {i} players')); break
         q = urllib.parse.quote(f'"{nm}"')
         for mode in SEN.get('modes', ['timelinevolraw', 'timelinetone']):
             time.sleep(5.5)
             extra = '&maxrecords=250&sort=datedesc' if mode == 'artlist' else ''
-            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json{extra}', f'gdelt_{mode}_{i}')
+            d = get(f'https://api.gdeltproject.org/api/v2/doc/doc?query={q}%20sourcelang:english&mode={mode}&startdatetime={s0}&enddatetime={s1}&format=json{extra}', f'gdelt_{mode}_{i}', timeout=20)
             if d: save(f'sentiment/gdelt/{mode}/{nm.replace(" ", "_").replace("/", "")}.json', d)
     # Google Trends (unofficial, may be rate-limited from cloud IPs) - small probe
     try:
