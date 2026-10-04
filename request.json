@@ -8,8 +8,8 @@
  "pinnacle": true,
  "mlb_bullpen": true,
  "mlb_fresh": true,
- "statcast_start": "2026-09-30",
- "requested": "2026-10-03T21:51:12.090987Z",
+ "statcast_start": "2026-10-01",
+ "requested": "2026-10-04T02:16:08.014429Z",
  "weather": [
   {
    "id": "nfl_IND_WAS",
