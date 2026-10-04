@@ -4,12 +4,12 @@
   "mlb"
  ],
  "nfl_days": 2,
- "mlb_days": 3,
+ "mlb_days": 2,
  "pinnacle": true,
  "mlb_bullpen": true,
  "mlb_fresh": true,
- "statcast_start": "2026-09-01",
- "requested": "2026-10-04T16:33:29.099542Z",
+ "statcast_start": "2026-10-01",
+ "requested": "2026-10-04T19:16:04.651838Z",
  "weather": [
   {
    "id": "nfl_IND_WAS",
