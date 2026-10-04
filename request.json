@@ -1,15 +1,14 @@
 {
  "sports": [
-  "nfl",
-  "mlb"
+  "nfl"
  ],
- "nfl_days": 3,
+ "nfl_days": 2,
  "mlb_days": 3,
  "pinnacle": true,
- "mlb_bullpen": true,
- "mlb_fresh": true,
+ "mlb_bullpen": false,
+ "mlb_fresh": false,
  "statcast_start": "2026-10-01",
- "requested": "2026-10-04T02:16:08.014429Z",
+ "requested": "2026-10-04T14:10:00.256288Z",
  "weather": [
   {
    "id": "nfl_IND_WAS",
@@ -65,21 +64,6 @@
    "id": "nfl_DET_CAR",
    "lat": 35.2258,
    "lon": -80.8528
-  },
-  {
-   "id": "mlb_CLE",
-   "lat": 41.4962,
-   "lon": -81.6852
-  },
-  {
-   "id": "mlb_LAD",
-   "lat": 34.0739,
-   "lon": -118.24
-  },
-  {
-   "id": "mlb_MIL",
-   "lat": 43.028,
-   "lon": -87.9712
   }
  ]
 }
