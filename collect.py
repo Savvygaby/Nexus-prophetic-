@@ -200,6 +200,15 @@ if REQ.get('statcast_catchers'):
     except Exception as ex: LOG['errors'].append(dict(tag='statcast_catchers', err=str(ex)[:200]))
     save('manifest.json', LOG)
 
+
+# ======================= Historical full-slate game lines (request.json 'hist_lines': {sport, dates, regions, markets, tag}) =======================
+HL = REQ.get('hist_lines')
+if HL and KEY:
+    for dte in HL['dates']:
+        o = get(f"https://api.the-odds-api.com/v4/historical/sports/{HL['sport']}/odds?apiKey={KEY}&regions={HL.get('regions', 'us,eu')}&markets={HL.get('markets', 'spreads,totals')}&oddsFormat=american&date={dte}", f"hl_{dte}")
+        if o: save(f"{HL.get('tag', 'hist_lines')}/{dte[:10]}.json", o)
+    save('manifest.json', LOG)
+
 # ======================= Reddit via PRAW + VADER (needs secrets REDDITID / REDDITSECRET / REDDITAGENT) =======================
 RD = REQ.get('reddit')
 if RD:
