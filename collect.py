@@ -185,6 +185,21 @@ if REQ.get('savant_extra'):
             time.sleep(1)
     save('manifest.json', LOG)
 
+
+# ======================= Statcast catcher per PA (request.json 'statcast_catchers': [[start, end], ...]) =======================
+if REQ.get('statcast_catchers'):
+    try:
+        import subprocess; subprocess.run(['pip', 'install', '-q', 'pybaseball'], check=False)
+        import pybaseball as pb; pb.cache.enable()
+        os.makedirs(f'{OUT}/mlb', exist_ok=True)
+        for a, b in REQ['statcast_catchers']:
+            t0 = time.time(); sc = pb.statcast(start_dt=a, end_dt=b)
+            pa = sc[sc.events.notna()][['game_pk', 'game_date', 'at_bat_number', 'pitcher', 'batter', 'fielder_2', 'events', 'game_type', 'home_team', 'away_team', 'inning_topbot']]
+            pa.to_csv(f'{OUT}/mlb/catchers_{a[:4]}.csv.gz', index=False, compression='gzip'); LOG['calls'].append(dict(tag=f'catchers_{a[:4]}', rows=len(pa), sec=round(time.time() - t0)))
+            save('manifest.json', LOG)
+    except Exception as ex: LOG['errors'].append(dict(tag='statcast_catchers', err=str(ex)[:200]))
+    save('manifest.json', LOG)
+
 # ======================= Reddit via PRAW + VADER (needs secrets REDDITID / REDDITSECRET / REDDITAGENT) =======================
 RD = REQ.get('reddit')
 if RD:
