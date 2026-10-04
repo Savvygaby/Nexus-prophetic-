@@ -166,6 +166,25 @@ if REQ.get('mlb_sched_range'):
     if s_: save(f'mlb/schedule_{a}_{b}.json', s_)
     save('manifest.json', LOG)
 
+
+# ======================= Baseball Savant leaderboards (request.json 'savant_extra': true) =======================
+if REQ.get('savant_extra'):
+    SV = {'xstats_bat': 'https://baseballsavant.mlb.com/leaderboard/expected_statistics?type=batter&year={y}&position=&team=&filterType=bip&min=25&csv=true',
+          'xstats_pit': 'https://baseballsavant.mlb.com/leaderboard/expected_statistics?type=pitcher&year={y}&position=&team=&filterType=bip&min=25&csv=true',
+          'statcast_bat': 'https://baseballsavant.mlb.com/leaderboard/statcast?type=batter&year={y}&position=&team=&min=25&csv=true',
+          'framing': 'https://baseballsavant.mlb.com/leaderboard/catcher-framing?type=catcher&seasonStart={y}&seasonEnd={y}&team=&min=1&sortColumn=rv_tot&sortDirection=desc&csv=true',
+          'framing2': 'https://baseballsavant.mlb.com/catcher_framing?year={y}&team=&min=1&type=catcher&sort=4,1&csv=true'}
+    os.makedirs(f'{OUT}/savant', exist_ok=True)
+    for name, u in SV.items():
+        for yr in (2023, 2024, 2025, 2026):
+            try:
+                r = urllib.request.urlopen(urllib.request.Request(u.format(y=yr), headers={'User-Agent': 'Mozilla/5.0'}), timeout=60).read().decode('utf-8', 'ignore')
+                if r.count('\n') > 10 and ',' in r[:300]: open(f'{OUT}/savant/{name}_{yr}.csv', 'w').write(r); LOG['calls'].append(dict(tag=f'{name}_{yr}', status=200, lines=r.count('\n')))
+                else: LOG['errors'].append(dict(tag=f'{name}_{yr}', err='not csv: ' + r[:120]))
+            except Exception as ex: LOG['errors'].append(dict(tag=f'{name}_{yr}', err=str(ex)[:150]))
+            time.sleep(1)
+    save('manifest.json', LOG)
+
 # ======================= Reddit via PRAW + VADER (needs secrets REDDITID / REDDITSECRET / REDDITAGENT) =======================
 RD = REQ.get('reddit')
 if RD:

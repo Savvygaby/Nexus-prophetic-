@@ -1,14 +1,12 @@
 {
- "sports": [
-  "nfl"
- ],
+ "sports": [],
  "nfl_days": 2,
  "mlb_days": 3,
- "pinnacle": true,
+ "pinnacle": false,
  "mlb_bullpen": false,
  "mlb_fresh": false,
  "statcast_start": "2026-10-01",
- "requested": "2026-10-04T15:35:47.095263Z",
+ "requested": "2026-10-04T16:26:54.666808Z",
  "weather": [
   {
    "id": "nfl_IND_WAS",
@@ -65,5 +63,6 @@
    "lat": 35.2258,
    "lon": -80.8528
   }
- ]
+ ],
+ "savant_extra": true
 }
