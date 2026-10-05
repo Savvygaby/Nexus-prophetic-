@@ -89,6 +89,15 @@ if HIST and KEY:
             if o: save(f"{tag}/{e['id']}.json", o)
     LOG['finished_hist'] = dt.datetime.utcnow().isoformat() + 'Z'; save('manifest.json', LOG)
 
+
+# ======================= extra NFL player markets for given events (request.json 'nfl_extra': {events: [...], markets: "..."}) =======================
+NX = REQ.get('nfl_extra')
+if NX and KEY:
+    for eid in NX['events']:
+        o = get(f"{API}/americanfootball_nfl/events/{eid}/odds?apiKey={KEY}&regions=us&markets={NX['markets']}&oddsFormat=american", f"nfl_extra_{eid}")
+        if o: save(f"nfl/extra_{eid}.json", o)
+    LOG['finished_extra'] = dt.datetime.utcnow().isoformat() + 'Z'; save('manifest.json', LOG)
+
 # ======================= Oct 2 additions =======================
 NOW = dt.datetime.utcnow().strftime('%Y%m%dT%H%MZ')
 # (1) Pinnacle (sharpest book) via bookmakers=pinnacle: game lines + main props
