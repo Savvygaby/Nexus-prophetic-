@@ -98,6 +98,21 @@ if NX and KEY:
         if o: save(f"nfl/extra_{eid}.json", o)
     LOG['finished_extra'] = dt.datetime.utcnow().isoformat() + 'Z'; save('manifest.json', LOG)
 
+
+# ======================= any extra markets, chunked so one unsupported key can't sink the rest (request.json 'extra': [{sport, event, markets:[...]}]) =======================
+for XJ in (REQ.get('extra') or []):
+    if not KEY: break
+    got = {'bookmakers': []}; byb = {}
+    ms = XJ['markets']
+    for k0 in range(0, len(ms), 6):
+        ch = ','.join(ms[k0:k0 + 6])
+        o = get(f"{API}/{XJ['sport']}/events/{XJ['event']}/odds?apiKey={KEY}&regions=us,us2&markets={ch}&oddsFormat=american", f"extra_{XJ['event']}_{k0}")
+        if not o: continue
+        got.update({k: v for k, v in o.items() if k != 'bookmakers'})
+        for b in o.get('bookmakers', []): byb.setdefault(b['key'], dict(b, markets=[]))['markets'].extend(b['markets'])
+    got['bookmakers'] = list(byb.values())
+    save(f"extra/{XJ['event']}.json", got)
+
 # ======================= Oct 2 additions =======================
 NOW = dt.datetime.utcnow().strftime('%Y%m%dT%H%MZ')
 # (1) Pinnacle (sharpest book) via bookmakers=pinnacle: game lines + main props
