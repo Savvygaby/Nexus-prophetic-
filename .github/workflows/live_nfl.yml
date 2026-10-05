@@ -1,0 +1,22 @@
+name: live-nfl
+on:
+  push:
+    paths: ['live_request.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: live-nfl
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330          # GitHub hard limit is 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Poll ESPN and commit state
+        run: |
+          git config user.name "live-bot"
+          git config user.email "live-bot@users.noreply.github.com"
+          python collect_live.py
