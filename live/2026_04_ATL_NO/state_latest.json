@@ -14,10 +14,10 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 1,
-"distance": 5,
-"yardline_100": 82,
-"down_distance_text": "1st & 5 at NO 18",
+"down": 2,
+"distance": 7,
+"yardline_100": 84,
+"down_distance_text": "2nd & 7 at NO 16",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -126,9 +126,9 @@
 "tds": 0
 },
 {
-"espn_id": "3128303",
-"name": "Josh Woods",
-"key": "josh woods",
+"espn_id": "4360386",
+"name": "Sydney Brown",
+"key": "sydney brown",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -143,9 +143,9 @@
 "tds": 0
 },
 {
-"espn_id": "4360386",
-"name": "Sydney Brown",
-"key": "sydney brown",
+"espn_id": "3128303",
+"name": "Josh Woods",
+"key": "josh woods",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -256,6 +256,23 @@
 "ints": 0,
 "carries": 0,
 "rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
+"espn_id": "4599739",
+"name": "Kendre Miller",
+"key": "kendre miller",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 1,
+"rush_yds": -2.0,
 "receptions": 0,
 "targets": 0,
 "rec_yds": 0,
@@ -616,7 +633,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 22,
-"last_play": " PENALTY on ATL-M.Smith, Encroachment, 5 yards, enforced at NO 13 - No Play.",
-"fetched_utc": "2026-10-06T00:44:00.307103Z"
+"n_plays": 23,
+"last_play": " W.Sherman reported in as eligible.  K.Miller left end to NO 16 for -2 yards (S.Brown).",
+"fetched_utc": "2026-10-06T00:45:00.242502Z"
 }
