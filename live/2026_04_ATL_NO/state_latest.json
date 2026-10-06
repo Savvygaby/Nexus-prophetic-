@@ -15,13 +15,13 @@
 "first_possession": "ATL",
 "possession": "ATL",
 "down": null,
-"distance": 10,
+"distance": 0,
 "yardline_100": 0,
 "down_distance_text": null,
 "pending_kickoff": true,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "drives",
+"situation_source": "situation",
 "players": [
 {
 "espn_id": "4360423",
@@ -806,9 +806,9 @@
 "tds": 0
 },
 {
-"espn_id": "3931399",
-"name": "Justin Reid",
-"key": "justin reid",
+"espn_id": "4683215",
+"name": "Danny Stutsman",
+"key": "danny stutsman",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -823,9 +823,9 @@
 "tds": 0
 },
 {
-"espn_id": "4683215",
-"name": "Danny Stutsman",
-"key": "danny stutsman",
+"espn_id": "3931399",
+"name": "Justin Reid",
+"key": "justin reid",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -1282,7 +1282,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 151,
-"last_play": " M.Penix pass deep middle to J.Dotson for 31 yards, TOUCHDOWN.",
-"fetched_utc": "2026-10-06T03:01:00.301717Z"
+"n_plays": 152,
+"last_play": "M.Penix pass deep middle to J.Dotson for 31 yards, TOUCHDOWN. N.Folk extra point is GOOD, Center-L.McCullough, Holder-J.Bailey.",
+"fetched_utc": "2026-10-06T03:02:00.525656Z"
 }
