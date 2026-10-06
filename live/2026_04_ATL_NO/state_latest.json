@@ -14,10 +14,10 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
-"down": 1,
-"distance": 10,
-"yardline_100": 21,
-"down_distance_text": "1st & 10 at NO 21",
+"down": 2,
+"distance": 7,
+"yardline_100": 18,
+"down_distance_text": "2nd & 7 at NO 18",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -67,8 +67,8 @@
 "pass_yds": 0,
 "pass_tds": 0,
 "ints": 0,
-"carries": 11,
-"rush_yds": 41.0,
+"carries": 12,
+"rush_yds": 44.0,
 "receptions": 1,
 "targets": 1,
 "rec_yds": 5.0,
@@ -772,9 +772,9 @@
 "tds": 0
 },
 {
-"espn_id": "4683813",
-"name": "Jonas Sanker",
-"key": "jonas sanker",
+"espn_id": "4372533",
+"name": "Tyree Wilson",
+"key": "tyree wilson",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -789,9 +789,9 @@
 "tds": 0
 },
 {
-"espn_id": "4372533",
-"name": "Tyree Wilson",
-"key": "tyree wilson",
+"espn_id": "4683813",
+"name": "Jonas Sanker",
+"key": "jonas sanker",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -1044,6 +1044,23 @@
 "tds": 0
 },
 {
+"espn_id": "4248047",
+"name": "John Ridgeway III",
+"key": "john ridgeway",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "4383391",
 "name": "Jayden Price",
 "key": "jayden price",
@@ -1282,7 +1299,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 159,
-"last_play": "(Shotgun) T.Shough sacked at NO 21 for -9 yards (S.Ebukam).",
-"fetched_utc": "2026-10-06T03:09:00.462381Z"
+"n_plays": 160,
+"last_play": " Br.Robinson left guard to NO 18 for 3 yards (J.Ridgeway; T.Wilson).",
+"fetched_utc": "2026-10-06T03:11:00.252332Z"
 }
