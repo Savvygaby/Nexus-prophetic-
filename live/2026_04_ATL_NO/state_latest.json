@@ -14,14 +14,14 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 1,
+"down": null,
 "distance": 10,
 "yardline_100": 0,
 "down_distance_text": null,
-"pending_kickoff": false,
+"pending_kickoff": true,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "situation",
+"situation_source": "drives",
 "players": [
 {
 "espn_id": "4360423",
@@ -1294,5 +1294,5 @@
 },
 "n_plays": 178,
 "last_play": "(Shotgun) T.Shough pass short left to D.Vele for 3 yards, TOUCHDOWN. D.Carlson extra point is GOOD, Center-C.Adomitis, Holder-R.Wright.",
-"fetched_utc": "2026-10-06T03:27:00.386696Z"
+"fetched_utc": "2026-10-06T03:28:00.289635Z"
 }
