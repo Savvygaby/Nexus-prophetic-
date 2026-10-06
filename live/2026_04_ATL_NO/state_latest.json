@@ -15,9 +15,9 @@
 "first_possession": "ATL",
 "possession": "NO",
 "down": 1,
-"distance": 10,
-"yardline_100": 87,
-"down_distance_text": "1st & 10 at NO 13",
+"distance": 5,
+"yardline_100": 82,
+"down_distance_text": "1st & 5 at NO 18",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -616,7 +616,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 21,
-"last_play": "J.Bailey punts 28 yards to NO 13, Center-L.McCullough, fair catch by B.Brown.",
-"fetched_utc": "2026-10-06T00:41:00.167355Z"
+"n_plays": 22,
+"last_play": " PENALTY on ATL-M.Smith, Encroachment, 5 yards, enforced at NO 13 - No Play.",
+"fetched_utc": "2026-10-06T00:44:00.307103Z"
 }
