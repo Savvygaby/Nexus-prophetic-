@@ -434,18 +434,19 @@
 {
 "name": "ATL-Z.Smith",
 "period": 1,
-"clock": "12:57",
-"text": " T.Shough pass incomplete deep left to B.Lance. ATL-Z.Smith was injured during the play."
+"clock": "13:03",
+"text": "(Shotgun) T.Shough pass incomplete deep left to B.Lance. ATL-Z.Smith was injured during the play. ** Injury Update: ATL-C.Henderson has returned to the game."
 }
 ],
-"returned": [],
+"returned": [
+"ATL-C.Henderson"
+],
 "in_game_still_out": [
-"ATL-C.Henderson",
 "ATL-Z.Smith"
 ],
 "in_game_out": []
 },
-"n_plays": 10,
-"last_play": " T.Shough pass incomplete deep left to B.Lance. ATL-Z.Smith was injured during the play.",
-"fetched_utc": "2026-10-06T00:30:00.169853Z"
+"n_plays": 11,
+"last_play": "(Shotgun) T.Shough pass incomplete deep left to B.Lance. ATL-Z.Smith was injured during the play. ** Injury Update: ATL-C.Henderson has returned to the game.",
+"fetched_utc": "2026-10-06T00:31:00.208935Z"
 }
