@@ -13,12 +13,12 @@
 "game_seconds_remaining": 73,
 "halftime": false,
 "first_possession": "ATL",
-"possession": "NO",
-"down": null,
+"possession": "ATL",
+"down": 1,
 "distance": 10,
-"yardline_100": 0,
-"down_distance_text": null,
-"pending_kickoff": true,
+"yardline_100": 77,
+"down_distance_text": "1st & 10 at ATL 23",
+"pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
 "situation_source": "drives",
@@ -1292,7 +1292,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 178,
-"last_play": "(Shotgun) T.Shough pass short left to D.Vele for 3 yards, TOUCHDOWN. D.Carlson extra point is GOOD, Center-C.Adomitis, Holder-R.Wright.",
-"fetched_utc": "2026-10-06T03:28:00.289635Z"
+"n_plays": 179,
+"last_play": "D.Carlson kicks 60 yards from NO 35 to ATL 5. Z.Branch to ATL 23 for 18 yards.",
+"fetched_utc": "2026-10-06T03:29:00.344240Z"
 }
