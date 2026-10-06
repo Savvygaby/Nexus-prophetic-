@@ -14,10 +14,10 @@
 "halftime": true,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 1,
-"distance": 10,
-"yardline_100": 45,
-"down_distance_text": "1st & 10 at ATL 45",
+"down": 2,
+"distance": 11,
+"yardline_100": 46,
+"down_distance_text": "2nd & 11 at ATL 46",
 "pending_kickoff": false,
 "home_timeouts": 2,
 "away_timeouts": 2,
@@ -630,9 +630,9 @@
 "ints": 0,
 "carries": 4,
 "rush_yds": 13.0,
-"receptions": 3,
-"targets": 3,
-"rec_yds": 24.0,
+"receptions": 4,
+"targets": 4,
+"rec_yds": 31.0,
 "tds": 1
 },
 {
@@ -645,8 +645,8 @@
 "pass_yds": 0,
 "pass_tds": 0,
 "ints": 0,
-"carries": 4,
-"rush_yds": 6.0,
+"carries": 5,
+"rush_yds": 5.0,
 "receptions": 0,
 "targets": 0,
 "rec_yds": 0,
@@ -1238,7 +1238,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 101,
-"last_play": " T.Shough pass short right to C.Olave to ATL 45 for 11 yards (C.Henderson).",
-"fetched_utc": "2026-10-06T02:15:00.362230Z"
+"n_plays": 102,
+"last_play": " K.Miller left end to ATL 46 for -1 yards (M.Smith).",
+"fetched_utc": "2026-10-06T02:16:00.198308Z"
 }
