@@ -14,14 +14,14 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 1,
-"distance": 10,
-"yardline_100": 16,
-"down_distance_text": "1st & 10 at ATL 16",
+"down": 2,
+"distance": 5,
+"yardline_100": 11,
+"down_distance_text": "2nd & 5 at ATL 11",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "situation",
+"situation_source": "drives",
 "players": [
 {
 "espn_id": "4360423",
@@ -606,9 +606,9 @@
 "name": "Tyler Shough",
 "key": "tyler shough",
 "team": "NO",
-"pass_att": 46,
-"pass_cmp": 28,
-"pass_yds": 278.0,
+"pass_att": 47,
+"pass_cmp": 29,
+"pass_yds": 283.0,
 "pass_tds": 0,
 "ints": 0,
 "carries": 2,
@@ -698,9 +698,9 @@
 "ints": 0,
 "carries": 0,
 "rush_yds": 0,
-"receptions": 7,
-"targets": 11,
-"rec_yds": 111.0,
+"receptions": 8,
+"targets": 12,
+"rec_yds": 116.0,
 "tds": 0
 },
 {
@@ -1299,7 +1299,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 175,
-"last_play": "Two-Minute Warning",
-"fetched_utc": "2026-10-06T03:22:00.427574Z"
+"n_plays": 176,
+"last_play": " (Shotgun) T.Shough pass short left to C.Olave to ATL 11 for 5 yards (H.Perkins).",
+"fetched_utc": "2026-10-06T03:25:00.291079Z"
 }
