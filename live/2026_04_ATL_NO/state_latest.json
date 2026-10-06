@@ -3,21 +3,21 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "2:00 - 4th Quarter",
+"status": "1:18 - 4th Quarter",
 "completed": false,
 "quarter": 4,
-"clock": 120,
-"display_clock": "2:00",
+"clock": 78,
+"display_clock": "1:18",
 "home_score": 17,
 "away_score": 45,
-"game_seconds_remaining": 120,
+"game_seconds_remaining": 78,
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 2,
-"distance": 5,
-"yardline_100": 11,
-"down_distance_text": "2nd & 5 at ATL 11",
+"down": 1,
+"distance": 3,
+"yardline_100": 3,
+"down_distance_text": "1st & Goal at ATL 3",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -1150,6 +1150,13 @@
 "report": [
 {
 "team": "NO",
+"name": "Davon Godchaux",
+"key": "davon godchaux",
+"status": "Questionable",
+"pos": "DT"
+},
+{
+"team": "NO",
 "name": "Christen Miller",
 "key": "christen miller",
 "status": "Out",
@@ -1175,13 +1182,6 @@
 "key": "decamerion richardson",
 "status": "Out",
 "pos": "CB"
-},
-{
-"team": "NO",
-"name": "Kaden Elliss",
-"key": "kaden elliss",
-"status": "Out",
-"pos": "LB"
 },
 {
 "team": "ATL",
@@ -1249,13 +1249,6 @@
 "pos": "CB"
 },
 {
-"team": "NO",
-"name": "Kaden Elliss",
-"key": "kaden elliss",
-"status": "Out",
-"pos": "LB"
-},
-{
 "team": "ATL",
 "name": "Jared Ivey",
 "key": "jared ivey",
@@ -1299,7 +1292,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 176,
-"last_play": " (Shotgun) T.Shough pass short left to C.Olave to ATL 11 for 5 yards (H.Perkins).",
-"fetched_utc": "2026-10-06T03:25:00.291079Z"
+"n_plays": 177,
+"last_play": " (Shotgun) T.Shough pass incomplete short left to J.Johnson.\nPENALTY on ATL-S.Brown, Defensive Pass Interference, 8 yards, enforced at ATL 11 - No Play.",
+"fetched_utc": "2026-10-06T03:26:00.294406Z"
 }
