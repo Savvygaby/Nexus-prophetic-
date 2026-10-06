@@ -3,22 +3,22 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "0:56 - 1st Quarter",
+"status": "0:48 - 1st Quarter",
 "completed": false,
 "quarter": 1,
-"clock": 56,
-"display_clock": "0:56",
+"clock": 48,
+"display_clock": "0:48",
 "home_score": 0,
-"away_score": 7,
-"game_seconds_remaining": 2756,
+"away_score": 14,
+"game_seconds_remaining": 2748,
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
-"down": 1,
-"distance": 4,
-"yardline_100": 4,
-"down_distance_text": "1st & Goal at NO 4",
-"pending_kickoff": false,
+"down": null,
+"distance": 10,
+"yardline_100": 0,
+"down_distance_text": null,
+"pending_kickoff": true,
 "home_timeouts": 3,
 "away_timeouts": 2,
 "situation_source": "drives",
@@ -50,12 +50,12 @@
 "pass_yds": 0,
 "pass_tds": 0,
 "ints": 0,
-"carries": 6,
-"rush_yds": 74.0,
+"carries": 7,
+"rush_yds": 78.0,
 "receptions": 0,
 "targets": 1,
 "rec_yds": 0.0,
-"tds": 1
+"tds": 2
 },
 {
 "espn_id": "4241474",
@@ -755,23 +755,6 @@
 "tds": 0
 },
 {
-"espn_id": "4683215",
-"name": "Danny Stutsman",
-"key": "danny stutsman",
-"team": "NO",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 0,
-"targets": 0,
-"rec_yds": 0,
-"tds": 0
-},
-{
 "espn_id": "4383391",
 "name": "Jayden Price",
 "key": "jayden price",
@@ -879,10 +862,10 @@
 },
 {
 "team": "ATL",
-"name": "Za'Darius Smith",
-"key": "zadarius smith",
+"name": "Jake Matthews",
+"key": "jake matthews",
 "status": "Questionable",
-"pos": "DE"
+"pos": "OT"
 },
 {
 "team": "ATL",
@@ -890,6 +873,13 @@
 "key": "jared ivey",
 "status": "Out",
 "pos": "LB"
+},
+{
+"team": "ATL",
+"name": "Za'Darius Smith",
+"key": "zadarius smith",
+"status": "Questionable",
+"pos": "DE"
 },
 {
 "team": "ATL",
@@ -904,13 +894,6 @@
 "key": "ethan onianwa",
 "status": "Out",
 "pos": "OT"
-},
-{
-"team": "ATL",
-"name": "Jack Strand",
-"key": "jack strand",
-"status": "Out",
-"pos": "QB"
 }
 ],
 "out": [
@@ -969,13 +952,6 @@
 "key": "ethan onianwa",
 "status": "Out",
 "pos": "OT"
-},
-{
-"team": "ATL",
-"name": "Jack Strand",
-"key": "jack strand",
-"status": "Out",
-"pos": "QB"
 }
 ],
 "in_game_injured": [
@@ -1000,7 +976,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 45,
-"last_play": " (Shotgun) M.Penix pass incomplete short right to J.Dotson.\nPENALTY on NO-K.McKinstry, Defensive Holding, 4 yards, enforced at NO 8 - No Play.",
-"fetched_utc": "2026-10-06T01:05:00.141439Z"
+"n_plays": 46,
+"last_play": "Bi.Robinson left guard for 4 yards, TOUCHDOWN. N.Folk extra point is GOOD, Center-L.McCullough, Holder-J.Bailey.",
+"fetched_utc": "2026-10-06T01:06:00.188125Z"
 }
