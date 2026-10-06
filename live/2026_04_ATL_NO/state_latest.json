@@ -13,12 +13,12 @@
 "game_seconds_remaining": 1358,
 "halftime": false,
 "first_possession": "ATL",
-"possession": "NO",
-"down": null,
+"possession": "ATL",
+"down": 1,
 "distance": 10,
-"yardline_100": 0,
-"down_distance_text": null,
-"pending_kickoff": true,
+"yardline_100": 74,
+"down_distance_text": "1st & 10 at ATL 26",
+"pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
 "situation_source": "drives",
@@ -699,7 +699,7 @@
 "carries": 0,
 "rush_yds": 0,
 "receptions": 5,
-"targets": 6,
+"targets": 5,
 "rec_yds": 53.0,
 "tds": 0
 },
@@ -733,7 +733,7 @@
 "carries": 0,
 "rush_yds": 0,
 "receptions": 1,
-"targets": 2,
+"targets": 3,
 "rec_yds": 2.0,
 "tds": 0
 },
@@ -993,6 +993,23 @@
 "tds": 0
 },
 {
+"espn_id": "4383391",
+"name": "Jayden Price",
+"key": "jayden price",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "4429040",
 "name": "Vernon Broughton",
 "key": "vernon broughton",
@@ -1027,9 +1044,9 @@
 "tds": 0
 },
 {
-"espn_id": "4383391",
-"name": "Jayden Price",
-"key": "jayden price",
+"espn_id": "5081999",
+"name": "CJ Donaldson",
+"key": "cj donaldson",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -1238,7 +1255,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 114,
-"last_play": " D.Carlson 27 yard field goal is GOOD, Center-C.Adomitis, Holder-R.Wright.",
-"fetched_utc": "2026-10-06T02:24:00.230481Z"
+"n_plays": 115,
+"last_play": "D.Carlson kicks 62 yards from NO 35 to ATL 3. Z.Branch to ATL 26 for 23 yards (J.Price; C.Donaldson).",
+"fetched_utc": "2026-10-06T02:26:00.210770Z"
 }
