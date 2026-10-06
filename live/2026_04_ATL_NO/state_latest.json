@@ -15,13 +15,13 @@
 "first_possession": "ATL",
 "possession": "ATL",
 "down": null,
-"distance": 10,
+"distance": 0,
 "yardline_100": 0,
 "down_distance_text": null,
 "pending_kickoff": true,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "drives",
+"situation_source": "situation",
 "players": [
 {
 "espn_id": "4360423",
@@ -293,7 +293,7 @@
 "in_game_still_out": [],
 "in_game_out": []
 },
-"n_plays": 4,
+"n_plays": 5,
 "last_play": "Bi.Robinson left end for 59 yards, TOUCHDOWN. N.Folk extra point is GOOD, Center-L.McCullough, Holder-J.Bailey.",
-"fetched_utc": "2026-10-06T00:21:00.105459Z"
+"fetched_utc": "2026-10-06T00:22:00.374799Z"
 }
