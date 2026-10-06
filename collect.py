@@ -106,7 +106,7 @@ for XJ in (REQ.get('extra') or []):
     ms = XJ['markets']
     for k0 in range(0, len(ms), 6):
         ch = ','.join(ms[k0:k0 + 6])
-        o = get(f"{API}/{XJ['sport']}/events/{XJ['event']}/odds?apiKey={KEY}&regions=us,us2&markets={ch}&oddsFormat=american" + (f"&bookmakers={XJ['bookmakers']}" if XJ.get('bookmakers') else '') + ("&includeLinks=true&includeSids=true" if XJ.get('links') else ''), f"extra_{XJ['event']}_{k0}")
+        o = get(f"{API}/{XJ['sport']}/events/{XJ['event']}/odds?apiKey={KEY}&regions={XJ.get('regions', 'us,us2')}&markets={ch}&oddsFormat=american" + (f"&bookmakers={XJ['bookmakers']}" if XJ.get('bookmakers') else '') + ("&includeLinks=true&includeSids=true" if XJ.get('links') else ''), f"extra_{XJ['event']}_{k0}")
         if not o: continue
         got.update({k: v for k, v in o.items() if k != 'bookmakers'})
         for b in o.get('bookmakers', []): byb.setdefault(b['key'], dict(b, markets=[]))['markets'].extend(b['markets'])
