@@ -1,0 +1,179 @@
+{
+"event_id": "401872979",
+"home": "NO",
+"away": "ATL",
+"state": "pre",
+"status": "Mon, October 5th at 8:15 PM EDT",
+"completed": false,
+"quarter": 0,
+"clock": 900,
+"display_clock": null,
+"home_score": 0,
+"away_score": 0,
+"game_seconds_remaining": 3600,
+"halftime": false,
+"first_possession": null,
+"possession": null,
+"down": null,
+"distance": null,
+"yardline_100": null,
+"down_distance_text": null,
+"pending_kickoff": false,
+"home_timeouts": 3,
+"away_timeouts": 3,
+"situation_source": "drives",
+"players": [],
+"injuries": {
+"report": [
+{
+"team": "NO",
+"name": "Christen Miller",
+"key": "christen miller",
+"status": "Out",
+"pos": "DT"
+},
+{
+"team": "NO",
+"name": "Zach Wilson",
+"key": "zach wilson",
+"status": "Out",
+"pos": "QB"
+},
+{
+"team": "NO",
+"name": "Noah Fant",
+"key": "noah fant",
+"status": "Out",
+"pos": "TE"
+},
+{
+"team": "NO",
+"name": "Decamerion Richardson",
+"key": "decamerion richardson",
+"status": "Out",
+"pos": "CB"
+},
+{
+"team": "NO",
+"name": "Kaden Elliss",
+"key": "kaden elliss",
+"status": "Out",
+"pos": "LB"
+},
+{
+"team": "ATL",
+"name": "Jared Ivey",
+"key": "jared ivey",
+"status": "Out",
+"pos": "LB"
+},
+{
+"team": "ATL",
+"name": "Cooper Rush",
+"key": "cooper rush",
+"status": "Out",
+"pos": "QB"
+},
+{
+"team": "ATL",
+"name": "Ethan Onianwa",
+"key": "ethan onianwa",
+"status": "Out",
+"pos": "OT"
+},
+{
+"team": "ATL",
+"name": "Jack Strand",
+"key": "jack strand",
+"status": "Out",
+"pos": "QB"
+},
+{
+"team": "ATL",
+"name": "Robert Longerbeam",
+"key": "robert longerbeam",
+"status": "Out",
+"pos": "CB"
+}
+],
+"out": [
+{
+"team": "NO",
+"name": "Christen Miller",
+"key": "christen miller",
+"status": "Out",
+"pos": "DT"
+},
+{
+"team": "NO",
+"name": "Zach Wilson",
+"key": "zach wilson",
+"status": "Out",
+"pos": "QB"
+},
+{
+"team": "NO",
+"name": "Noah Fant",
+"key": "noah fant",
+"status": "Out",
+"pos": "TE"
+},
+{
+"team": "NO",
+"name": "Decamerion Richardson",
+"key": "decamerion richardson",
+"status": "Out",
+"pos": "CB"
+},
+{
+"team": "NO",
+"name": "Kaden Elliss",
+"key": "kaden elliss",
+"status": "Out",
+"pos": "LB"
+},
+{
+"team": "ATL",
+"name": "Jared Ivey",
+"key": "jared ivey",
+"status": "Out",
+"pos": "LB"
+},
+{
+"team": "ATL",
+"name": "Cooper Rush",
+"key": "cooper rush",
+"status": "Out",
+"pos": "QB"
+},
+{
+"team": "ATL",
+"name": "Ethan Onianwa",
+"key": "ethan onianwa",
+"status": "Out",
+"pos": "OT"
+},
+{
+"team": "ATL",
+"name": "Jack Strand",
+"key": "jack strand",
+"status": "Out",
+"pos": "QB"
+},
+{
+"team": "ATL",
+"name": "Robert Longerbeam",
+"key": "robert longerbeam",
+"status": "Out",
+"pos": "CB"
+}
+],
+"in_game_injured": [],
+"returned": [],
+"in_game_still_out": [],
+"in_game_out": []
+},
+"n_plays": 0,
+"last_play": null,
+"fetched_utc": "2026-10-06T00:05:00.440021Z"
+}
