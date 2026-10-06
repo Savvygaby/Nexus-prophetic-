@@ -3,25 +3,25 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "1:38 - 3rd Quarter",
+"status": "1:08 - 3rd Quarter",
 "completed": false,
 "quarter": 3,
-"clock": 98,
-"display_clock": "1:38",
+"clock": 68,
+"display_clock": "1:08",
 "home_score": 10,
 "away_score": 31,
-"game_seconds_remaining": 998,
+"game_seconds_remaining": 968,
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 4,
-"distance": 10,
-"yardline_100": 43,
-"down_distance_text": "4th & 10 at ATL 43",
+"down": 1,
+"distance": 20,
+"yardline_100": 35,
+"down_distance_text": "1st & 20 at ATL 35",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "drives",
+"situation_source": "situation",
 "players": [
 {
 "espn_id": "4360423",
@@ -606,9 +606,9 @@
 "name": "Tyler Shough",
 "key": "tyler shough",
 "team": "NO",
-"pass_att": 31,
-"pass_cmp": 17,
-"pass_yds": 183.0,
+"pass_att": 32,
+"pass_cmp": 18,
+"pass_yds": 201.0,
 "pass_tds": 0,
 "ints": 0,
 "carries": 1,
@@ -704,6 +704,23 @@
 "tds": 0
 },
 {
+"espn_id": "4569559",
+"name": "Devaughn Vele",
+"key": "devaughn vele",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 2,
+"targets": 4,
+"rec_yds": 20.0,
+"tds": 0
+},
+{
 "espn_id": "4879276",
 "name": "Bryce Lance",
 "key": "bryce lance",
@@ -718,23 +735,6 @@
 "receptions": 1,
 "targets": 5,
 "rec_yds": 7.0,
-"tds": 0
-},
-{
-"espn_id": "4569559",
-"name": "Devaughn Vele",
-"key": "devaughn vele",
-"team": "NO",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 1,
-"targets": 3,
-"rec_yds": 2.0,
 "tds": 0
 },
 {
@@ -1167,7 +1167,7 @@
 "team": "ATL",
 "name": "Za'Darius Smith",
 "key": "zadarius smith",
-"status": "Out",
+"status": "Questionable",
 "pos": "DE"
 },
 {
@@ -1223,13 +1223,6 @@
 },
 {
 "team": "ATL",
-"name": "Za'Darius Smith",
-"key": "zadarius smith",
-"status": "Out",
-"pos": "DE"
-},
-{
-"team": "ATL",
 "name": "Cooper Rush",
 "key": "cooper rush",
 "status": "Out",
@@ -1265,7 +1258,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 132,
-"last_play": " (Shotgun) T.Shough pass incomplete deep right to B.Lance.",
-"fetched_utc": "2026-10-06T02:41:00.339652Z"
+"n_plays": 133,
+"last_play": " (Shotgun) T.Shough pass deep left to D.Vele to ATL 25 for 18 yards (X.Watts).",
+"fetched_utc": "2026-10-06T02:42:00.466938Z"
 }
