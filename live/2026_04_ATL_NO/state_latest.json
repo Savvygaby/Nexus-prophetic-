@@ -3,21 +3,21 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "13:34 - 1st Quarter",
+"status": "13:25 - 1st Quarter",
 "completed": false,
 "quarter": 1,
-"clock": 814,
-"display_clock": "13:34",
+"clock": 805,
+"display_clock": "13:25",
 "home_score": 0,
 "away_score": 7,
-"game_seconds_remaining": 3514,
+"game_seconds_remaining": 3505,
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 1,
+"down": 2,
 "distance": 10,
 "yardline_100": 73,
-"down_distance_text": "1st & 10 at NO 27",
+"down_distance_text": "2nd & 10 at NO 27",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -140,6 +140,40 @@
 "receptions": 0,
 "targets": 0,
 "rec_yds": 0,
+"tds": 0
+},
+{
+"espn_id": "4360689",
+"name": "Tyler Shough",
+"key": "tyler shough",
+"team": "NO",
+"pass_att": 1,
+"pass_cmp": 0,
+"pass_yds": 0.0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
+"espn_id": "4361370",
+"name": "Chris Olave",
+"key": "chris olave",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 1,
+"rec_yds": 0.0,
 "tds": 0
 },
 {
@@ -339,12 +373,21 @@
 "pos": "CB"
 }
 ],
-"in_game_injured": [],
+"in_game_injured": [
+{
+"name": "ATL-C.Henderson",
+"period": 1,
+"clock": "13:27",
+"text": " (Shotgun) T.Shough pass incomplete short right to C.Olave. ATL-C.Henderson was injured during the play."
+}
+],
 "returned": [],
-"in_game_still_out": [],
+"in_game_still_out": [
+"ATL-C.Henderson"
+],
 "in_game_out": []
 },
-"n_plays": 6,
-"last_play": "N.Folk kicks 62 yards from ATL 35 to NO 3. J.Price to NO 27 for 24 yards (J.Woods; S.Brown).",
-"fetched_utc": "2026-10-06T00:25:00.211449Z"
+"n_plays": 8,
+"last_play": " (Shotgun) T.Shough pass incomplete short right to C.Olave. ATL-C.Henderson was injured during the play.",
+"fetched_utc": "2026-10-06T00:26:00.267538Z"
 }
