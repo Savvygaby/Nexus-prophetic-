@@ -2,15 +2,15 @@
 "event_id": "401872979",
 "home": "NO",
 "away": "ATL",
-"state": "in",
-"status": "0:38 - 4th Quarter",
-"completed": false,
+"state": "post",
+"status": "Final",
+"completed": true,
 "quarter": 4,
-"clock": 38,
-"display_clock": "0:38",
+"clock": 0.0,
+"display_clock": null,
 "home_score": 24,
 "away_score": 45,
-"game_seconds_remaining": 38,
+"game_seconds_remaining": 0,
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
@@ -1292,7 +1292,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 181,
+"n_plays": 182,
 "last_play": " M.Penix kneels to ATL 21 for -1 yards.",
-"fetched_utc": "2026-10-06T03:30:00.264754Z"
+"fetched_utc": "2026-10-06T03:31:00.363247Z"
 }
