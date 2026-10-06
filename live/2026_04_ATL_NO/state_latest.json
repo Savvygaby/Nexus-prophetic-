@@ -3,25 +3,25 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "2:53 - 3rd Quarter",
+"status": "2:11 - 3rd Quarter",
 "completed": false,
 "quarter": 3,
-"clock": 173,
-"display_clock": "2:53",
+"clock": 131,
+"display_clock": "2:11",
 "home_score": 10,
-"away_score": 24,
-"game_seconds_remaining": 1073,
+"away_score": 31,
+"game_seconds_remaining": 1031,
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
-"down": 2,
-"distance": 4,
-"yardline_100": 8,
-"down_distance_text": "2nd & 4 at NO 8",
-"pending_kickoff": false,
+"down": null,
+"distance": 10,
+"yardline_100": 0,
+"down_distance_text": null,
+"pending_kickoff": true,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "situation",
+"situation_source": "drives",
 "players": [
 {
 "espn_id": "4360423",
@@ -67,12 +67,12 @@
 "pass_yds": 0,
 "pass_tds": 0,
 "ints": 0,
-"carries": 10,
-"rush_yds": 33.0,
+"carries": 11,
+"rush_yds": 41.0,
 "receptions": 1,
 "targets": 1,
 "rec_yds": 5.0,
-"tds": 1
+"tds": 2
 },
 {
 "espn_id": "4426502",
@@ -1255,7 +1255,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 123,
-"last_play": " (Shotgun) Bi.Robinson right tackle to NO 8 for 6 yards (K.Boyd).",
-"fetched_utc": "2026-10-06T02:32:00.661633Z"
+"n_plays": 124,
+"last_play": "Br.Robinson right tackle for 8 yards, TOUCHDOWN. N.Folk extra point is GOOD, Center-L.McCullough, Holder-J.Bailey.",
+"fetched_utc": "2026-10-06T02:33:00.263383Z"
 }
