@@ -3,21 +3,21 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "5:58 - 1st Quarter",
+"status": "5:03 - 1st Quarter",
 "completed": false,
 "quarter": 1,
-"clock": 358,
-"display_clock": "5:58",
+"clock": 303,
+"display_clock": "5:03",
 "home_score": 0,
 "away_score": 7,
-"game_seconds_remaining": 3058,
+"game_seconds_remaining": 3003,
 "halftime": false,
 "first_possession": "ATL",
-"possession": "NO",
-"down": 3,
-"distance": 8,
-"yardline_100": 36,
-"down_distance_text": "3rd & 8 at ATL 36",
+"possession": "ATL",
+"down": 1,
+"distance": 10,
+"yardline_100": 66,
+"down_distance_text": "1st & 10 at ATL 34",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -245,6 +245,40 @@
 "tds": 0
 },
 {
+"espn_id": "3895841",
+"name": "Mike Hughes",
+"key": "mike hughes",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
+"espn_id": "3919512",
+"name": "Jessie Bates III",
+"key": "jessie bates",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "3045527",
 "name": "Samson Ebukam",
 "key": "samson ebukam",
@@ -317,9 +351,9 @@
 "name": "Tyler Shough",
 "key": "tyler shough",
 "team": "NO",
-"pass_att": 7,
-"pass_cmp": 4,
-"pass_yds": 47.0,
+"pass_att": 8,
+"pass_cmp": 5,
+"pass_yds": 49.0,
 "pass_tds": 0,
 "ints": 0,
 "carries": 1,
@@ -375,9 +409,9 @@
 "ints": 0,
 "carries": 0,
 "rush_yds": 0,
-"receptions": 1,
-"targets": 1,
-"rec_yds": 23.0,
+"receptions": 2,
+"targets": 2,
+"rec_yds": 25.0,
 "tds": 0
 },
 {
@@ -551,6 +585,23 @@
 "tds": 0
 },
 {
+"espn_id": "3051909",
+"name": "Daniel Carlson",
+"key": "daniel carlson",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "4361823",
 "name": "Ryan Wright",
 "key": "ryan wright",
@@ -607,6 +658,13 @@
 },
 {
 "team": "ATL",
+"name": "Za'Darius Smith",
+"key": "zadarius smith",
+"status": "Questionable",
+"pos": "DE"
+},
+{
+"team": "ATL",
 "name": "Jared Ivey",
 "key": "jared ivey",
 "status": "Out",
@@ -632,13 +690,6 @@
 "key": "jack strand",
 "status": "Out",
 "pos": "QB"
-},
-{
-"team": "ATL",
-"name": "Robert Longerbeam",
-"key": "robert longerbeam",
-"status": "Out",
-"pos": "CB"
 }
 ],
 "out": [
@@ -704,13 +755,6 @@
 "key": "jack strand",
 "status": "Out",
 "pos": "QB"
-},
-{
-"team": "ATL",
-"name": "Robert Longerbeam",
-"key": "robert longerbeam",
-"status": "Out",
-"pos": "CB"
 }
 ],
 "in_game_injured": [
@@ -735,7 +779,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 31,
-"last_play": " (No Huddle, Shotgun) T.Shough pass incomplete short right.",
-"fetched_utc": "2026-10-06T00:50:00.135661Z"
+"n_plays": 33,
+"last_play": "D.Carlson 52 yard field goal is No Good, Wide Left, Center-C.Adomitis, Holder-R.Wright.",
+"fetched_utc": "2026-10-06T00:51:00.136861Z"
 }
