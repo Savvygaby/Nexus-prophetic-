@@ -13,11 +13,11 @@
 "game_seconds_remaining": 3477,
 "halftime": false,
 "first_possession": "ATL",
-"possession": "NO",
-"down": 4,
-"distance": 8,
-"yardline_100": 71,
-"down_distance_text": "4th & 8 at NO 29",
+"possession": "ATL",
+"down": 1,
+"distance": 10,
+"yardline_100": 81,
+"down_distance_text": "1st & 10 at ATL 19",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -126,9 +126,43 @@
 "tds": 0
 },
 {
+"espn_id": "3045527",
+"name": "Samson Ebukam",
+"key": "samson ebukam",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "4240596",
 "name": "C.J. Henderson",
 "key": "cj henderson",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
+"espn_id": "4427090",
+"name": "Brandon Dorlus",
+"key": "brandon dorlus",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -435,7 +469,7 @@
 "name": "ATL-Z.Smith",
 "period": 1,
 "clock": "13:03",
-"text": "(Shotgun) T.Shough pass incomplete deep left to B.Lance. ATL-Z.Smith was injured during the play. ** Injury Update: ATL-C.Henderson has returned to the game."
+"text": "(Shotgun) T.Shough pass incomplete deep left to B.Lance [B.Dorlus]. ATL-Z.Smith was injured during the play. ** Injury Update: ATL-C.Henderson has returned to t"
 }
 ],
 "returned": [
@@ -446,7 +480,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 11,
-"last_play": "(Shotgun) T.Shough pass incomplete deep left to B.Lance. ATL-Z.Smith was injured during the play. ** Injury Update: ATL-C.Henderson has returned to the game.",
-"fetched_utc": "2026-10-06T00:31:00.208935Z"
+"n_plays": 12,
+"last_play": "R.Wright punts 52 yards to ATL 19, Center-C.Adomitis, fair catch by Z.Branch.",
+"fetched_utc": "2026-10-06T00:34:00.189001Z"
 }
