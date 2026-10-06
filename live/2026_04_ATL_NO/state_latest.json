@@ -21,7 +21,7 @@
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "situation",
+"situation_source": "drives",
 "players": [
 {
 "espn_id": "4360423",
@@ -1258,7 +1258,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 133,
-"last_play": " (Shotgun) T.Shough pass deep left to D.Vele to ATL 25 for 18 yards (X.Watts).",
-"fetched_utc": "2026-10-06T02:42:00.466938Z"
+"n_plays": 134,
+"last_play": " (No Huddle, Shotgun) T.Shough pass short middle to D.Vele to ATL 20 for 5 yards (J.Bates).\nPENALTY on NO-T.Fuaga, Offensive Holding, 10 yards, enforced at ATL 25 - No Play.",
+"fetched_utc": "2026-10-06T02:43:00.347217Z"
 }
