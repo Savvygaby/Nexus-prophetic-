@@ -1,1 +1,1 @@
-{"sports": [], "pinnacle": false, "mlb_bullpen": false, "extra": [{"sport": "americanfootball_nfl", "event": "8bd90781e17e6d97df3941063cedae1e", "markets": ["h2h", "spreads", "totals", "player_pass_yds", "player_reception_yds", "player_receptions", "player_rush_yds"], "tag": "_live"}]}
+{"sports": ["nfl", "mlb"], "nfl_days": 7, "mlb_days": 1, "pinnacle": true, "mlb_bullpen": true, "mlb_fresh": true, "statcast_start": "2026-10-01", "requested": "2026-10-06T20:41:38.706842Z"}
