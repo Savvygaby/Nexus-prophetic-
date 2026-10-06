@@ -16,12 +16,12 @@
 "possession": "ATL",
 "down": 1,
 "distance": 10,
-"yardline_100": 58,
-"down_distance_text": "1st & 10 at ATL 42",
+"yardline_100": 66,
+"down_distance_text": "1st & 10 at ATL 34",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "situation",
+"situation_source": "drives",
 "players": [
 {
 "espn_id": "4360423",
@@ -781,5 +781,5 @@
 },
 "n_plays": 34,
 "last_play": "D.Carlson 52 yard field goal is No Good, Wide Left, Center-C.Adomitis, Holder-R.Wright.",
-"fetched_utc": "2026-10-06T00:52:00.397968Z"
+"fetched_utc": "2026-10-06T00:53:00.307389Z"
 }
