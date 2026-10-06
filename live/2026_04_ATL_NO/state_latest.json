@@ -14,10 +14,10 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
-"down": 4,
+"down": 1,
 "distance": 4,
-"yardline_100": 8,
-"down_distance_text": "4th & 4 at NO 8",
+"yardline_100": 4,
+"down_distance_text": "1st & Goal at NO 4",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 2,
@@ -1000,7 +1000,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 44,
-"last_play": " (Shotgun) Bi.Robinson up the middle to NO 8 for 3 yards (T.Wilson).",
-"fetched_utc": "2026-10-06T01:04:00.208814Z"
+"n_plays": 45,
+"last_play": " (Shotgun) M.Penix pass incomplete short right to J.Dotson.\nPENALTY on NO-K.McKinstry, Defensive Holding, 4 yards, enforced at NO 8 - No Play.",
+"fetched_utc": "2026-10-06T01:05:00.141439Z"
 }
