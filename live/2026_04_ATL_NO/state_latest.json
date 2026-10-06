@@ -14,10 +14,10 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
-"down": 1,
-"distance": 10,
-"yardline_100": 72,
-"down_distance_text": "1st & 10 at ATL 28",
+"down": 2,
+"distance": 7,
+"yardline_100": 41,
+"down_distance_text": "2nd & 7 at NO 41",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -28,9 +28,9 @@
 "name": "Michael Penix Jr.",
 "key": "michael penix",
 "team": "ATL",
-"pass_att": 18,
-"pass_cmp": 13,
-"pass_yds": 164.0,
+"pass_att": 19,
+"pass_cmp": 14,
+"pass_yds": 192.0,
 "pass_tds": 0,
 "ints": 0,
 "carries": 0,
@@ -50,8 +50,8 @@
 "pass_yds": 0,
 "pass_tds": 0,
 "ints": 0,
-"carries": 16,
-"rush_yds": 132.0,
+"carries": 17,
+"rush_yds": 135.0,
 "receptions": 1,
 "targets": 2,
 "rec_yds": 2.0,
@@ -92,6 +92,23 @@
 "tds": 0
 },
 {
+"espn_id": "4360248",
+"name": "Kyle Pitts Sr.",
+"key": "kyle pitts",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 3,
+"targets": 3,
+"rec_yds": 47.0,
+"tds": 0
+},
+{
 "espn_id": "4361409",
 "name": "Jahan Dotson",
 "key": "jahan dotson",
@@ -106,23 +123,6 @@
 "receptions": 1,
 "targets": 2,
 "rec_yds": 23.0,
-"tds": 0
-},
-{
-"espn_id": "4360248",
-"name": "Kyle Pitts Sr.",
-"key": "kyle pitts",
-"team": "ATL",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 2,
-"targets": 2,
-"rec_yds": 19.0,
 "tds": 0
 },
 {
@@ -347,6 +347,23 @@
 "tds": 0
 },
 {
+"espn_id": "4427090",
+"name": "Brandon Dorlus",
+"key": "brandon dorlus",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "4595343",
 "name": "Kendal Daniels",
 "key": "kendal daniels",
@@ -367,23 +384,6 @@
 "espn_id": "4376288",
 "name": "LaCale London",
 "key": "lacale london",
-"team": "ATL",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 0,
-"targets": 0,
-"rec_yds": 0,
-"tds": 0
-},
-{
-"espn_id": "4427090",
-"name": "Brandon Dorlus",
-"key": "brandon dorlus",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -823,9 +823,9 @@
 "tds": 0
 },
 {
-"espn_id": "4429073",
-"name": "Fadil Diggs",
-"key": "fadil diggs",
+"espn_id": "3931399",
+"name": "Justin Reid",
+"key": "justin reid",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -840,9 +840,26 @@
 "tds": 0
 },
 {
-"espn_id": "3931399",
-"name": "Justin Reid",
-"key": "justin reid",
+"espn_id": "4384595",
+"name": "Khristian Boyd",
+"key": "khristian boyd",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
+"espn_id": "4429073",
+"name": "Fadil Diggs",
+"key": "fadil diggs",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -894,23 +911,6 @@
 "espn_id": "4241993",
 "name": "Pete Werner",
 "key": "pete werner",
-"team": "NO",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 0,
-"targets": 0,
-"rec_yds": 0,
-"tds": 0
-},
-{
-"espn_id": "4384595",
-"name": "Khristian Boyd",
-"key": "khristian boyd",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -1133,13 +1133,6 @@
 "report": [
 {
 "team": "NO",
-"name": "Alvin Kamara",
-"key": "alvin kamara",
-"status": "Questionable",
-"pos": "RB"
-},
-{
-"team": "NO",
 "name": "Christen Miller",
 "key": "christen miller",
 "status": "Out",
@@ -1165,6 +1158,13 @@
 "key": "decamerion richardson",
 "status": "Out",
 "pos": "CB"
+},
+{
+"team": "NO",
+"name": "Kaden Elliss",
+"key": "kaden elliss",
+"status": "Out",
+"pos": "LB"
 },
 {
 "team": "ATL",
@@ -1232,6 +1232,13 @@
 "pos": "CB"
 },
 {
+"team": "NO",
+"name": "Kaden Elliss",
+"key": "kaden elliss",
+"status": "Out",
+"pos": "LB"
+},
+{
 "team": "ATL",
 "name": "Jared Ivey",
 "key": "jared ivey",
@@ -1275,7 +1282,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 146,
-"last_play": "D.Carlson kicks 62 yards from NO 35 to ATL 3. Z.Branch to ATL 28 for 25 yards (I.Stalbird).",
-"fetched_utc": "2026-10-06T02:55:00.340925Z"
+"n_plays": 148,
+"last_play": " Bi.Robinson left tackle to NO 41 for 3 yards (K.Boyd; J.Reid).",
+"fetched_utc": "2026-10-06T02:58:00.415802Z"
 }
