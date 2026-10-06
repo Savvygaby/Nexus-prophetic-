@@ -3,22 +3,22 @@
 "home": "NO",
 "away": "ATL",
 "state": "in",
-"status": "6:52 - 4th Quarter",
+"status": "6:18 - 4th Quarter",
 "completed": false,
 "quarter": 4,
-"clock": 412,
-"display_clock": "6:52",
+"clock": 378,
+"display_clock": "6:18",
 "home_score": 17,
 "away_score": 45,
-"game_seconds_remaining": 412,
+"game_seconds_remaining": 378,
 "halftime": false,
 "first_possession": "ATL",
-"possession": "ATL",
-"down": null,
-"distance": 10,
-"yardline_100": 0,
-"down_distance_text": null,
-"pending_kickoff": true,
+"possession": "NO",
+"down": 2,
+"distance": 1,
+"yardline_100": 67,
+"down_distance_text": "2nd & 1 at NO 33",
+"pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
 "situation_source": "drives",
@@ -211,9 +211,9 @@
 "tds": 0
 },
 {
-"espn_id": "4431005",
-"name": "Xavier Watts",
-"key": "xavier watts",
+"espn_id": "4685502",
+"name": "Harold Perkins Jr.",
+"key": "harold perkins",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -228,9 +228,9 @@
 "tds": 0
 },
 {
-"espn_id": "4685502",
-"name": "Harold Perkins Jr.",
-"key": "harold perkins",
+"espn_id": "4431005",
+"name": "Xavier Watts",
+"key": "xavier watts",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -313,6 +313,23 @@
 "tds": 0
 },
 {
+"espn_id": "4595343",
+"name": "Kendal Daniels",
+"key": "kendal daniels",
+"team": "ATL",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 0,
+"rush_yds": 0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
+},
+{
 "espn_id": "3128303",
 "name": "Josh Woods",
 "key": "josh woods",
@@ -364,9 +381,9 @@
 "tds": 0
 },
 {
-"espn_id": "4595343",
-"name": "Kendal Daniels",
-"key": "kendal daniels",
+"espn_id": "4429014",
+"name": "Gervon Dexter Sr.",
+"key": "gervon dexter",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -500,23 +517,6 @@
 "tds": 0
 },
 {
-"espn_id": "4429014",
-"name": "Gervon Dexter Sr.",
-"key": "gervon dexter",
-"team": "ATL",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 0,
-"targets": 0,
-"rec_yds": 0,
-"tds": 0
-},
-{
 "espn_id": "4567111",
 "name": "DeMarcco Hellams",
 "key": "demarcco hellams",
@@ -634,6 +634,23 @@
 "targets": 7,
 "rec_yds": 35.0,
 "tds": 2
+},
+{
+"espn_id": "5081999",
+"name": "CJ Donaldson",
+"key": "cj donaldson",
+"team": "NO",
+"pass_att": 0,
+"pass_cmp": 0,
+"pass_yds": 0,
+"pass_tds": 0,
+"ints": 0,
+"carries": 2,
+"rush_yds": 12.0,
+"receptions": 0,
+"targets": 0,
+"rec_yds": 0,
+"tds": 0
 },
 {
 "espn_id": "4599739",
@@ -1095,23 +1112,6 @@
 "tds": 0
 },
 {
-"espn_id": "5081999",
-"name": "CJ Donaldson",
-"key": "cj donaldson",
-"team": "NO",
-"pass_att": 0,
-"pass_cmp": 0,
-"pass_yds": 0,
-"pass_tds": 0,
-"ints": 0,
-"carries": 0,
-"rush_yds": 0,
-"receptions": 0,
-"targets": 0,
-"rec_yds": 0,
-"tds": 0
-},
-{
 "espn_id": "3051909",
 "name": "Daniel Carlson",
 "key": "daniel carlson",
@@ -1299,7 +1299,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 162,
-"last_play": "Br.Robinson left guard for 11 yards, TOUCHDOWN. N.Folk extra point is GOOD, Center-L.McCullough, Holder-J.Bailey.",
-"fetched_utc": "2026-10-06T03:14:00.261984Z"
+"n_plays": 164,
+"last_play": "C.Donaldson up the middle to NO 33 for 9 yards (K.Daniels).",
+"fetched_utc": "2026-10-06T03:16:00.419479Z"
 }
