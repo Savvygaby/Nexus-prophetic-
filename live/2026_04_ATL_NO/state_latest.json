@@ -14,23 +14,23 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "ATL",
-"down": 1,
-"distance": 10,
-"yardline_100": 65,
-"down_distance_text": "1st & 10 at ATL 35",
+"down": 2,
+"distance": 1,
+"yardline_100": 56,
+"down_distance_text": "2nd & 1 at ATL 44",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 2,
-"situation_source": "drives",
+"situation_source": "situation",
 "players": [
 {
 "espn_id": "4360423",
 "name": "Michael Penix Jr.",
 "key": "michael penix",
 "team": "ATL",
-"pass_att": 6,
-"pass_cmp": 3,
-"pass_yds": 30.0,
+"pass_att": 7,
+"pass_cmp": 4,
+"pass_yds": 39.0,
 "pass_tds": 0,
 "ints": 0,
 "carries": 0,
@@ -92,9 +92,9 @@
 "tds": 0
 },
 {
-"espn_id": "4360248",
-"name": "Kyle Pitts Sr.",
-"key": "kyle pitts",
+"espn_id": "3043275",
+"name": "Austin Hooper",
+"key": "austin hooper",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -105,13 +105,13 @@
 "rush_yds": 0,
 "receptions": 1,
 "targets": 1,
-"rec_yds": 10.0,
+"rec_yds": 9.0,
 "tds": 0
 },
 {
-"espn_id": "3043275",
-"name": "Austin Hooper",
-"key": "austin hooper",
+"espn_id": "4360248",
+"name": "Kyle Pitts Sr.",
+"key": "kyle pitts",
 "team": "ATL",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -1044,7 +1044,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 52,
-"last_play": "D.Carlson kicks 65 yards from NO 35 to end zone, Touchback to the ATL 35.",
-"fetched_utc": "2026-10-06T01:16:00.355311Z"
+"n_plays": 53,
+"last_play": "M.Penix pass short left to K.Pitts pushed ob at ATL 44 for 9 yards (F.Diggs).  The ball spot was assisted by replay.",
+"fetched_utc": "2026-10-06T01:17:00.235005Z"
 }
