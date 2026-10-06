@@ -15,13 +15,13 @@
 "first_possession": "ATL",
 "possession": "ATL",
 "down": null,
-"distance": 0,
+"distance": 10,
 "yardline_100": 0,
 "down_distance_text": null,
 "pending_kickoff": true,
 "home_timeouts": 3,
 "away_timeouts": 3,
-"situation_source": "situation",
+"situation_source": "drives",
 "players": [
 {
 "espn_id": "4360423",
@@ -840,9 +840,9 @@
 "tds": 0
 },
 {
-"espn_id": "4241993",
-"name": "Pete Werner",
-"key": "pete werner",
+"espn_id": "4428350",
+"name": "Quincy Riley",
+"key": "quincy riley",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -857,9 +857,9 @@
 "tds": 0
 },
 {
-"espn_id": "4428350",
-"name": "Quincy Riley",
-"key": "quincy riley",
+"espn_id": "4241993",
+"name": "Pete Werner",
+"key": "pete werner",
 "team": "NO",
 "pass_att": 0,
 "pass_cmp": 0,
@@ -1284,5 +1284,5 @@
 },
 "n_plays": 152,
 "last_play": "M.Penix pass deep middle to J.Dotson for 31 yards, TOUCHDOWN. N.Folk extra point is GOOD, Center-L.McCullough, Holder-J.Bailey.",
-"fetched_utc": "2026-10-06T03:02:00.525656Z"
+"fetched_utc": "2026-10-06T03:03:00.269844Z"
 }
