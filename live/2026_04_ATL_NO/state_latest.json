@@ -14,10 +14,10 @@
 "halftime": false,
 "first_possession": "ATL",
 "possession": "NO",
-"down": 2,
-"distance": 22,
-"yardline_100": 37,
-"down_distance_text": "2nd & 22 at ATL 37",
+"down": 3,
+"distance": 18,
+"yardline_100": 33,
+"down_distance_text": "3rd & 18 at ATL 33",
 "pending_kickoff": false,
 "home_timeouts": 3,
 "away_timeouts": 3,
@@ -606,9 +606,9 @@
 "name": "Tyler Shough",
 "key": "tyler shough",
 "team": "NO",
-"pass_att": 33,
-"pass_cmp": 19,
-"pass_yds": 204.0,
+"pass_att": 34,
+"pass_cmp": 20,
+"pass_yds": 208.0,
 "pass_tds": 0,
 "ints": 0,
 "carries": 1,
@@ -630,9 +630,9 @@
 "ints": 0,
 "carries": 5,
 "rush_yds": 16.0,
-"receptions": 4,
-"targets": 6,
-"rec_yds": 31.0,
+"receptions": 5,
+"targets": 7,
+"rec_yds": 35.0,
 "tds": 1
 },
 {
@@ -1258,7 +1258,7 @@
 ],
 "in_game_out": []
 },
-"n_plays": 137,
-"last_play": " T.Shough pass short left to K.Miller to ATL 37 for 3 yards (H.Perkins) [Y.Abdullah].",
-"fetched_utc": "2026-10-06T02:45:00.276167Z"
+"n_plays": 138,
+"last_play": " (Shotgun) T.Shough pass short left to A.Kamara pushed ob at ATL 33 for 4 yards (C.Henderson).",
+"fetched_utc": "2026-10-06T02:48:00.345204Z"
 }
