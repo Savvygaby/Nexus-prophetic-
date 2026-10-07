@@ -19,6 +19,8 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -q playwright && python -m playwright install --with-deps chromium
+      - run: python collect_espn_close.py
+        continue-on-error: true
       - run: python collect_xo_api.py
         continue-on-error: true
       - run: python collect_xo.py
