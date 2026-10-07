@@ -1,0 +1,1 @@
+{"delta":0,"last_event_timestamp":"2026-10-07T18:08:42.004000Z"}
