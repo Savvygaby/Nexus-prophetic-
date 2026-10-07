@@ -12,15 +12,18 @@ concurrency: xo
 jobs:
   snap:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: pip install -q playwright && python -m playwright install --with-deps chromium
+      - run: python collect_xo_api.py
+        continue-on-error: true
       - run: python collect_xo.py
         continue-on-error: true
+        if: github.event_name == 'workflow_dispatch'
       - name: Commit
         if: always()
         run: |
