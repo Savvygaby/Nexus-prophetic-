@@ -40,3 +40,4 @@ for name, path in (('officials', 'officials/officials.parquet'), ('players', 'pl
     try: save(name, get(R + path))
     except Exception as e: log[name] = f'ERR {e}'
 json.dump(log, open('nflverse/_log.json', 'w'), indent=1)
+# rerun 1791488611

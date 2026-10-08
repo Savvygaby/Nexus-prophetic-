@@ -18,11 +18,9 @@ jobs:
       - run: python collect_nflverse.py
       - name: Push to data branch
         run: |
-          git config user.name "data-bot"
-          git config user.email "data-bot@users.noreply.github.com"
-          mkdir -p /tmp/nv && cp -r nflverse /tmp/nv/
-          git checkout --orphan data-tmp
-          git rm -rq --cached . 
-          git add -f /dev/null 2>/dev/null || true
-          cd /tmp/nv && git init -q && git checkout -q -b data && git add nflverse && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "nflverse $(date -u +%Y%m%d)"
+          ls -la nflverse | sort -k5 -n | tail -8
+          find nflverse -size +95M -print -delete
+          mkdir -p /tmp/nv && cp -r nflverse /tmp/nv/ && cd /tmp/nv
+          git init -q && git checkout -q -b data
+          git add nflverse && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "nflverse $(date -u +%Y%m%d)"
           git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data
