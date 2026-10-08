@@ -1,5 +1,7 @@
 name: nflverse-pull
 on:
+  schedule:
+    - cron: '17 13 * * 2'      # Tuesdays 9:17am ET: weekly snaps/participation/injuries/depth refresh
   workflow_dispatch:
   push:
     paths: ['collect_nflverse.py']
