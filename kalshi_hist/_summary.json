@@ -1,0 +1,46 @@
+{
+ "KXMLBKS": {
+  "markets": 6000,
+  "sec": 1500
+ },
+ "KXMLBHIT": {
+  "markets": 6000,
+  "sec": 1501
+ },
+ "KXMLBTB": {
+  "markets": 6000,
+  "sec": 1501
+ },
+ "KXMLBHR": {
+  "markets": 6000,
+  "sec": 1502
+ },
+ "KXMLBHRR": {
+  "markets": 6000,
+  "sec": 1502
+ },
+ "KXMLBOUTS": {
+  "markets": 1436,
+  "sec": 359
+ },
+ "KXNFLRECYDS": {
+  "markets": 6000,
+  "sec": 1507
+ },
+ "KXNFLRSHYDS": {
+  "markets": 3508,
+  "sec": 878
+ },
+ "KXNFLPASSYDS": {
+  "markets": 1460,
+  "sec": 365
+ },
+ "KXNFLREC": {
+  "markets": 5313,
+  "sec": 1330
+ },
+ "KXNFLANYTD": {
+  "markets": 0,
+  "sec": 0
+ }
+}
