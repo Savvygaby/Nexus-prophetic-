@@ -41,3 +41,4 @@ for s in SERIES:
             if not cursor: break
     summary[s] = dict(markets=n, sec=round(time.time() - t0)); print(s, summary[s], flush=True)
 json.dump(summary, open('kalshi_hist/_summary.json', 'w'), indent=1)
+# v2

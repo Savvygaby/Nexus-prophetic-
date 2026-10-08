@@ -20,6 +20,6 @@ jobs:
         run: |
           ls -la kalshi_hist
           mkdir -p /tmp/kh && cp -r kalshi_hist /tmp/kh/ && cd /tmp/kh
-          git init -q && git checkout -q -b data-kalshi22
+          git init -q && git checkout -q -b data-kalshi2
           git add kalshi_hist && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "kalshi history $(date -u +%Y%m%d)"
           git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data-kalshi2
