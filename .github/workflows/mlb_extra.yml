@@ -1,0 +1,36 @@
+name: mlb-statcast-umps-weather
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: backfill or daily
+        default: daily
+  push:
+    paths: ['collect_mlb_extra.py']
+  schedule:
+    - cron: '41 11 * * *'
+permissions:
+  contents: write
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q pybaseball pandas pyarrow
+      - name: Get existing data branch
+        run: git clone -q --depth 1 -b data-mlb "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" /tmp/dm || (mkdir -p /tmp/dm && cd /tmp/dm && git init -q && git checkout -q -b data-mlb)
+      - name: Collect
+        env:
+          OUT: /tmp/dm/mlbx
+          MODE: ${{ github.event_name == 'push' && 'backfill' || (github.event.inputs.mode || 'daily') }}
+        run: python collect_mlb_extra.py
+      - name: Push data-mlb
+        if: always()
+        run: |
+          cd /tmp/dm && du -sh mlbx || true
+          git add -A && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "mlb extra $(date -u +%Y%m%d%H%M)" || exit 0
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:data-mlb
