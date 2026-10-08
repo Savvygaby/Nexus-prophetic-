@@ -1,0 +1,50 @@
+{
+ "KXMLBGAME": {
+  "markets": 1544,
+  "sec": 385
+ },
+ "KXMLBTOTAL": {
+  "markets": 6000,
+  "sec": 1505
+ },
+ "KXMLBSPREAD": {
+  "markets": 6000,
+  "sec": 1501
+ },
+ "KXMLBF5": {
+  "markets": 2316,
+  "sec": 580
+ },
+ "KXMLBF5TOTAL": {
+  "markets": 5404,
+  "sec": 1352
+ },
+ "KXMLBTEAMTOTAL": {
+  "markets": 6000,
+  "sec": 1503
+ },
+ "KXMLBRFI": {
+  "markets": 771,
+  "sec": 194
+ },
+ "KXNFLGAME": {
+  "markets": 226,
+  "sec": 57
+ },
+ "KXNFLSPREAD": {
+  "markets": 2954,
+  "sec": 739
+ },
+ "KXNFLTOTAL": {
+  "markets": 2236,
+  "sec": 565
+ },
+ "KXNFLTD": {
+  "markets": 3131,
+  "sec": 782
+ },
+ "KXNFLFIRSTTD": {
+  "markets": 1664,
+  "sec": 416
+ }
+}
