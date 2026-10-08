@@ -1,0 +1,25 @@
+name: kalshi-history-games
+on:
+  workflow_dispatch:
+  push:
+    paths: ['collect_kalshi_hist2.py']
+permissions:
+  contents: write
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python collect_kalshi_hist2.py
+      - name: Push to data-kalshi branch
+        if: always()
+        run: |
+          ls -la kalshi_hist
+          mkdir -p /tmp/kh && cp -r kalshi_hist /tmp/kh/ && cd /tmp/kh
+          git init -q && git checkout -q -b data-kalshi22
+          git add kalshi_hist && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "kalshi history $(date -u +%Y%m%d)"
+          git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data-kalshi2
