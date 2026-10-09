@@ -1,0 +1,26 @@
+{
+ "KXNFLSPREAD": {
+  "end_period_ts": 1791255600,
+  "open_interest_fp": "3870.34",
+  "price": {
+   "close_dollars": "0.0300",
+   "high_dollars": "0.2700",
+   "low_dollars": "0.0200",
+   "mean_dollars": "0.0783",
+   "open_dollars": "0.0200"
+  },
+  "volume_fp": "4187.67",
+  "yes_ask": {
+   "close_dollars": "0.0300",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.0300",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.0200",
+   "high_dollars": "0.0800",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
