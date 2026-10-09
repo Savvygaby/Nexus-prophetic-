@@ -1,0 +1,26 @@
+{
+ "KXMLBSPREAD": {
+  "end_period_ts": 1791410400,
+  "open_interest_fp": "3082.39",
+  "price": {
+   "close_dollars": "0.0900",
+   "high_dollars": "0.2100",
+   "low_dollars": "0.0700",
+   "mean_dollars": "0.1552",
+   "open_dollars": "0.1700"
+  },
+  "volume_fp": "5521.58",
+  "yes_ask": {
+   "close_dollars": "0.1500",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.0800",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.1400",
+   "high_dollars": "0.2000",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
