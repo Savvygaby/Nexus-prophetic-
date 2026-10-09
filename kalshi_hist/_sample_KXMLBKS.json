@@ -1,0 +1,20 @@
+{
+ "KXMLBKS": {
+  "end_period_ts": 1791399600,
+  "open_interest_fp": "0.00",
+  "price": {},
+  "volume_fp": "0.00",
+  "yes_ask": {
+   "close_dollars": "0.1000",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.1000",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.0800",
+   "high_dollars": "0.0800",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
