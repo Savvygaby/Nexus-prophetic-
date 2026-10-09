@@ -1,0 +1,27 @@
+{
+ "KXNFLGAME": {
+  "end_period_ts": 1790913600,
+  "open_interest_fp": "48343.07",
+  "price": {
+   "close_dollars": "0.5600",
+   "high_dollars": "0.5600",
+   "low_dollars": "0.5500",
+   "mean_dollars": "0.5573",
+   "open_dollars": "0.5600",
+   "previous_dollars": "0.5600"
+  },
+  "volume_fp": "398.97",
+  "yes_ask": {
+   "close_dollars": "0.5600",
+   "high_dollars": "0.5600",
+   "low_dollars": "0.5600",
+   "open_dollars": "0.5600"
+  },
+  "yes_bid": {
+   "close_dollars": "0.5500",
+   "high_dollars": "0.5500",
+   "low_dollars": "0.5500",
+   "open_dollars": "0.5500"
+  }
+ }
+}
