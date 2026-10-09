@@ -1,0 +1,26 @@
+{
+ "KXNFLTOTAL": {
+  "end_period_ts": 1791252000,
+  "open_interest_fp": "214.43",
+  "price": {
+   "close_dollars": "0.0300",
+   "high_dollars": "0.2900",
+   "low_dollars": "0.0300",
+   "mean_dollars": "0.0897",
+   "open_dollars": "0.2900"
+  },
+  "volume_fp": "262.43",
+  "yes_ask": {
+   "close_dollars": "0.0500",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.0400",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.0200",
+   "high_dollars": "0.1000",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
