@@ -2,6 +2,8 @@ name: nflverse-pull
 on:
   schedule:
     - cron: '17 13 * * 2'      # Tuesdays 9:17am ET: weekly snaps/participation/injuries/depth refresh
+    - cron: '47 21 * * 5'      # Fridays 5:47pm ET: final injury report
+    - cron: '7 14 * * 0'       # Sundays 10:07am ET: inactives-day injury refresh before the 11:20 re-price
   workflow_dispatch:
   push:
     paths: ['collect_nflverse.py']
