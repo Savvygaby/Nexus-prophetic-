@@ -93,7 +93,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824133,2026-04-02,R,2026,Kauffman Stadium,Kansas City Royals,Minnesota Twins,1.0,5.0,666142.0,671737.0,Cory Blaser,Jansen Visconti,"72 degrees, Partly Cloudy.","14 mph, R To L.",1:10 PM.,"11,694.",9,0.0,0.0,0,1
 825105,2026-04-02,R,2026,Chase Field,Arizona Diamondbacks,Atlanta Braves,2.0,17.0,669194.0,625643.0,Malachi Moore,Mike Estabrook,"80 degrees, Partly Cloudy.","0 mph, None.",6:41 PM.,"21,600.",9,0.0,1.0,1,10
 823242,2026-04-02,R,2026,Oracle Park,San Francisco Giants,New York Mets,7.0,2.0,592662.0,656849.0,Nestor Ceja,Charlie Ramos,"56 degrees, Clear.","12 mph, Out To CF.",6:45 PM.,"32,073.",9,3.0,1.0,6,2
-824621,2026-04-02,R,2026,Rate Field,Chicago White Sox,Toronto Blue Jays,,,691799.0,656302.0,Stu Scheurwater,Junior Valentine,"53 degrees, Partly Cloudy.","6 mph, L To R.",1:10 PM.,"33,171.",10,1.0,0.0,3,1
 822758,2026-04-03,R,2026,Nationals Park,Washington Nationals,Los Angeles Dodgers,6.0,13.0,571945.0,686218.0,Gabe Morales,Doug Eddings,"62 degrees, Partly Cloudy.","4 mph, Out To RF.",1:06 PM.,"41,161.",9,3.0,0.0,4,11
 824299,2026-04-03,R,2026,Comerica Park,Detroit Tigers,St. Louis Cardinals,4.0,0.0,664285.0,700241.0,Carlos Torres,Nate Tomlinson,"73 degrees, Partly Cloudy.","18 mph, Out To LF.",1:13 PM.,"45,008.",9,0.0,0.0,3,0
 823568,2026-04-03,R,2026,Yankee Stadium,New York Yankees,Miami Marlins,8.0,2.0,701542.0,691587.0,Tom Hanahan,Ron Kulpa,"58 degrees, Partly Cloudy.","8 mph, Out To LF.",1:41 PM.,"48,788.",9,2.0,1.0,4,2
@@ -108,7 +107,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 825026,2026-04-03,R,2026,Sutter Health Park,Athletics,Houston Astros,11.0,4.0,605488.0,664299.0,Edwin Moscoso,Vic Carapazza,"73 degrees, Clear.","3 mph, Out To RF.",6:41 PM.,"12,410.",9,0.0,0.0,11,1
 825103,2026-04-03,R,2026,Chase Field,Arizona Diamondbacks,Atlanta Braves,0.0,2.0,593958.0,656550.0,Mike Estabrook,Alfonso Márquez,"83 degrees, Partly Cloudy.","4 mph, In From CF.",6:45 PM.,"29,192.",9,0.0,0.0,0,0
 823240,2026-04-03,R,2026,Oracle Park,San Francisco Giants,New York Mets,3.0,10.0,641816.0,690997.0,Charlie Ramos,David Rackley,"59 degrees, Clear.","8 mph, Out To CF.",7:15 PM.,"38,613.",9,0.0,2.0,0,5
-824134,2026-04-03,R,2026,Kauffman Stadium,Kansas City Royals,Milwaukee Brewers,,,607625.0,701656.0,Lance Barksdale,Will Little,"55 degrees, Partly Cloudy.","15 mph, L To R.",6:10 PM.,"12,732.",9,0.0,0.0,2,2
 824295,2026-04-04,R,2026,Comerica Park,Detroit Tigers,St. Louis Cardinals,11.0,6.0,656427.0,669160.0,Nate Tomlinson,Mark Wegner,"56 degrees, Partly Cloudy.","15 mph, In From RF.",1:11 PM.,"28,708.",9,3.0,0.0,8,6
 824622,2026-04-04,R,2026,Rate Field,Chicago White Sox,Toronto Blue Jays,6.0,3.0,691799.0,689254.0,Junior Valentine,Jordan Baker,"50 degrees, Cloudy.","16 mph, Out To LF.",1:10 PM.,"18,389.",9,1.0,0.0,1,0
 824132,2026-04-04,R,2026,Kauffman Stadium,Kansas City Royals,Milwaukee Brewers,2.0,5.0,679883.0,694477.0,Ryan Wills,Jen Pawol,"47 degrees, Partly Cloudy.","15 mph, L To R.",1:10 PM.,"17,055.",9,0.0,2.0,0,5
@@ -124,7 +122,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824378,2026-04-04,R,2026,Coors Field,Colorado Rockies,Philadelphia Phillies,1.0,2.0,657514.0,666200.0,Alex Tosi,Andy Fletcher,"60 degrees, Clear.","7 mph, R To L.",6:12 PM.,"39,718.",9,0.0,1.0,1,2
 823239,2026-04-04,R,2026,Oracle Park,San Francisco Giants,New York Mets,0.0,9.0,694738.0,605280.0,David Rackley,Edwin Jimenez,"67 degrees, Partly Cloudy.","10 mph, Out To CF.",6:06 PM.,"36,553.",9,0.0,0.0,0,8
 824054,2026-04-04,R,2026,Angel Stadium,Los Angeles Angels,Seattle Mariners,1.0,0.0,686799.0,676106.0,Paul Clemons,Adrian Johnson,"82 degrees, Partly Cloudy.","8 mph, Out To LF.",6:39 PM.,"44,084.",9,1.0,0.0,1,0
-824460,2026-04-04,R,2026,Progressive Field,Cleveland Guardians,Chicago Cubs,,,800048.0,684007.0,Mark Ripperger,Shane Livensparger,"44 degrees, Partly Cloudy.","16 mph, L To R.",4:35 PM.,"19,791.",9,0.0,0.0,0,1
 824459,2026-04-05,R,2026,Progressive Field,Cleveland Guardians,Chicago Cubs,0.0,1.0,677944.0,665795.0,Dan Bellino,John Bacon,"44 degrees, Cloudy.","15 mph, L To R.",1:12 PM.,,9,0.0,0.0,0,0
 824460,2026-04-05,R,2026,Progressive Field,Cleveland Guardians,Chicago Cubs,6.0,5.0,800048.0,684007.0,Mark Ripperger,Shane Livensparger,"44 degrees, Partly Cloudy.","16 mph, L To R.",4:35 PM.,"19,791.",9,0.0,0.0,0,1
 822756,2026-04-05,R,2026,Nationals Park,Washington Nationals,Los Angeles Dodgers,6.0,8.0,656492.0,808963.0,Willie Traynor,Mike Muchlinski,"60 degrees, Overcast.","4 mph, In From LF.",3:44 PM.,"24,899.",9,0.0,0.0,6,1
@@ -407,7 +404,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824527,2026-04-25,R,2026,Great American Ball Park,Cincinnati Reds,Detroit Tigers,9.0,2.0,663903.0,656427.0,Laz Diaz,Brian O'Nora,"72 degrees, Partly Cloudy.","7 mph, Out To RF.",7:18 PM.,"35,315.",9,4.0,1.0,6,2
 823960,2026-04-25,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Chicago Cubs,12.0,4.0,808963.0,607067.0,Mike Estabrook,Malachi Moore,"63 degrees, Cloudy.","11 mph, Out To CF.",4:15 PM.,"53,397.",9,0.0,0.0,8,4
 824933,2026-04-25,R,2026,Truist Park,Atlanta Braves,Philadelphia Phillies,5.0,8.0,693821.0,554430.0,Emil Jimenez,Mike Muchlinski,"68 degrees, Cloudy.","3 mph, Calm.",8:11 PM.,"39,324.",10,0.0,1.0,2,3
-823637,2026-04-25,R,2026,Citi Field,New York Mets,Colorado Rockies,,,673540.0,801403.0,Louie Krupa,Marvin Hudson,"57 degrees, Clear.","8 mph, In From RF.",4:59 PM.,"38,155.",9,0.0,0.0,0,3
 824852,2026-04-26,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Boston Red Sox,3.0,5.0,680694.0,813349.0,Alex Tosi,Cory Blaser,"53 degrees, Partly Cloudy.","14 mph, In From LF.",1:37 PM.,"32,511.",9,0.0,0.0,1,3
 824934,2026-04-26,R,2026,Truist Park,Atlanta Braves,Philadelphia Phillies,6.0,2.0,519242.0,605400.0,Mike Muchlinski,Gabe Morales,"72 degrees, Partly Cloudy.","5 mph, Out To CF.",1:36 PM.,"39,213.",9,3.0,0.0,6,0
 822824,2026-04-26,R,2026,Rogers Centre,Toronto Blue Jays,Cleveland Guardians,4.0,2.0,571578.0,677944.0,Ramon De Jesus,Adrian Johnson,"72 degrees, Roof Closed.","0 mph, None.",1:38 PM.,"41,136.",9,2.0,0.0,2,2
@@ -460,8 +456,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824930,2026-04-29,R,2026,Truist Park,Atlanta Braves,Detroit Tigers,4.0,3.0,702275.0,669373.0,Will Little,Roberto Ortiz,"77 degrees, Cloudy.","9 mph, Out To LF.",7:17 PM.,"30,439.",9,2.0,0.0,2,3
 823796,2026-04-29,R,2026,American Family Field,Milwaukee Brewers,Arizona Diamondbacks,2.0,6.0,687075.0,593958.0,Alfonso Márquez,Mike Estabrook,"64 degrees, Roof Closed.","0 mph, None.",6:40 PM.,"24,540.",9,1.0,0.0,2,4
 825015,2026-04-29,R,2026,Sutter Health Park,Athletics,Kansas City Royals,5.0,2.0,622663.0,608379.0,John Libka,D.J. Reyburn,"80 degrees, Clear.","5 mph, R To L.",6:41 PM.,"9,399.",9,0.0,1.0,4,1
-823471,2026-04-29,R,2026,Citizens Bank Park,Philadelphia Phillies,San Francisco Giants,,,641835.0,605288.0,David Rackley,Chris Guccione,"63 degrees, Partly Cloudy.","9 mph, L To R.",5:38 PM.,"34,109.",10,2.0,0.0,4,2
-824850,2026-04-29,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Houston Astros,,,687064.0,621121.0,Stu Scheurwater,Junior Valentine,"65 degrees, Partly Cloudy.","14 mph, Out To RF.",3:58 PM.,"26,586.",9,0.0,5.0,3,11
 824929,2026-04-30,R,2026,Truist Park,Atlanta Braves,Detroit Tigers,2.0,5.0,693821.0,664285.0,Roberto Ortiz,Jim Wolf,"62 degrees, Cloudy.","9 mph, R To L.",12:17 PM.,"32,620.",9,0.0,0.0,2,0
 824848,2026-04-30,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Houston Astros,10.0,3.0,605135.0,663567.0,Rob Drake,Derek Thomas,"63 degrees, Partly Cloudy.","13 mph, L To R.",12:35 PM.,,9,0.0,0.0,5,0
 824850,2026-04-30,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Houston Astros,5.0,11.0,687064.0,621121.0,Stu Scheurwater,Junior Valentine,"65 degrees, Partly Cloudy.","14 mph, Out To RF.",3:58 PM.,"26,586.",9,0.0,5.0,3,11
@@ -543,8 +537,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 825092,2026-05-05,R,2026,Chase Field,Arizona Diamondbacks,Pittsburgh Pirates,9.0,0.0,593958.0,696149.0,Ben May,John Tumpane,"76 degrees, Partly Cloudy.","11 mph, Varies.",6:40 PM.,"22,410.",9,2.0,0.0,2,0
 823142,2026-05-05,R,2026,T-Mobile Park,Seattle Mariners,Atlanta Braves,2.0,3.0,669923.0,693821.0,Will Little,Ryan Additon,"64 degrees, Clear.","5 mph, In From LF.",6:41 PM.,"27,128.",9,0.0,0.0,2,2
 823227,2026-05-05,R,2026,Oracle Park,San Francisco Giants,San Diego Padres,5.0,10.0,657277.0,621111.0,Adam Hamari,Tripp Gibson,"59 degrees, Partly Cloudy.","11 mph, Out To CF.",6:45 PM.,"38,275.",9,2.0,0.0,4,7
-823062,2026-05-05,R,2026,Busch Stadium,St. Louis Cardinals,Milwaukee Brewers,,,694335.0,694819.0,Clint Vondrak,Edwin Jimenez,"84 degrees, Cloudy.","8 mph, L To R.",1:15 PM.,"24,430.",9,2.0,0.0,3,2
-824362,2026-05-05,R,2026,Coors Field,Colorado Rockies,New York Mets,,,500779.0,681035.0,Sean Barber,John Libka,"64 degrees, Cloudy.","7 mph, Out To CF.",1:11 PM.,"13,378.",9,0.0,0.0,1,2
 822985,2026-05-06,R,2026,Tropicana Field,Tampa Bay Rays,Toronto Blue Jays,3.0,0.0,663556.0,571578.0,Nestor Ceja,Charlie Ramos,"72 degrees, Dome.","0 mph, None.",1:10 PM.,"11,275.",9,0.0,0.0,2,0
 823063,2026-05-06,R,2026,Busch Stadium,St. Louis Cardinals,Milwaukee Brewers,2.0,6.0,669467.0,687075.0,Mike Muchlinski,Dexter Kelley,"58 degrees, Cloudy.","7 mph, In From RF.",12:16 PM.,"25,772.",9,0.0,4.0,0,5
 824198,2026-05-06,R,2026,Daikin Park,Houston Astros,Los Angeles Dodgers,2.0,12.0,621121.0,607192.0,Edwin Jimenez,Dan Bellino,"73 degrees, Roof Closed.","0 mph, None.",1:10 PM.,"32,741.",9,1.0,0.0,1,10
@@ -599,7 +591,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823304,2026-05-09,R,2026,Petco Park,San Diego Padres,St. Louis Cardinals,4.0,2.0,681190.0,669160.0,Jansen Visconti,Andy Fletcher,"68 degrees, Sunny.","7 mph, L To R.",4:15 PM.,"41,559.",9,0.0,0.0,3,1
 823224,2026-05-09,R,2026,Oracle Park,San Francisco Giants,Pittsburgh Pirates,3.0,13.0,694738.0,677952.0,Jacob Metz,Tom Hanahan,"59 degrees, Clear.","13 mph, Varies.",6:06 PM.,"40,417.",9,0.0,0.0,1,2
 823955,2026-05-09,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Atlanta Braves,2.0,7.0,605483.0,675911.0,Ben May,John Tumpane,"70 degrees, Clear.","8 mph, Out To RF.",6:10 PM.,"50,209.",9,0.0,1.0,0,6
-824766,2026-05-09,R,2026,Fenway Park,Boston Red Sox,Tampa Bay Rays,,,687562.0,643377.0,Mike Estabrook,Louie Krupa,"82 degrees, Sunny.","10 mph, In From LF.",1:35 PM.,"36,774.",9,0.0,0.0,3,0
 823868,2026-05-10,R,2026,loanDepot park,Miami Marlins,Washington Nationals,5.0,2.0,645261.0,676917.0,Chris Guccione,Nestor Ceja,"72 degrees, Roof Closed.","0 mph, None.",12:15 PM.,"11,848.",9,0.0,0.0,2,2
 824845,2026-05-10,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Athletics,2.0,1.0,669211.0,622663.0,Carlos Torres,Nate Tomlinson,"77 degrees, Partly Cloudy.","3 mph, R To L.",1:39 PM.,"24,213.",9,0.0,0.0,1,1
 824765,2026-05-10,R,2026,Fenway Park,Boston Red Sox,Tampa Bay Rays,1.0,4.0,801139.0,607259.0,John Libka,D.J. Reyburn,"69 degrees, Partly Cloudy.","4 mph, Out To CF.",1:36 PM.,"33,489.",9,0.0,1.0,0,3
@@ -772,7 +763,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 825082,2026-05-22,R,2026,Chase Field,Arizona Diamondbacks,Colorado Rockies,2.0,3.0,647336.0,608372.0,Nate Tomlinson,Rob Drake,"95 degrees, Clear.","1 mph, Varies.",6:40 PM.,"29,945.",9,0.0,0.0,2,1
 823298,2026-05-22,R,2026,Petco Park,San Diego Padres,Athletics,7.0,3.0,621111.0,605488.0,Malachi Moore,Laz Diaz,"66 degrees, Clear.","7 mph, L To R.",6:41 PM.,"41,180.",9,2.0,2.0,3,3
 823223,2026-05-22,R,2026,Oracle Park,San Francisco Giants,Chicago White Sox,4.0,9.0,686790.0,663436.0,Nestor Ceja,Louie Krupa,"59 degrees, Partly Cloudy.","12 mph, Out To CF.",7:16 PM.,"37,524.",9,0.0,0.0,3,9
-824518,2026-05-22,R,2026,Great American Ball Park,Cincinnati Reds,St. Louis Cardinals,,,663978.0,669467.0,Ben May,Jacob Metz,"71 degrees, Cloudy.","10 mph, R To L.",1:11 PM.,"19,927.",9,0.0,0.0,1,3
 824518,2026-05-23,R,2026,Great American Ball Park,Cincinnati Reds,St. Louis Cardinals,1.0,8.0,663978.0,669467.0,Ben May,Jacob Metz,"71 degrees, Cloudy.","10 mph, R To L.",1:11 PM.,"19,927.",9,0.0,0.0,1,3
 824516,2026-05-23,R,2026,Great American Ball Park,Cincinnati Reds,St. Louis Cardinals,7.0,6.0,695534.0,681517.0,John Tumpane,Chris Conroy,"74 degrees, Partly Cloudy.","5 mph, Out To LF.",7:16 PM.,"31,144.",11,0.0,0.0,5,1
 824674,2026-05-23,R,2026,Wrigley Field,Chicago Cubs,Houston Astros,0.0,3.0,607067.0,678906.0,Chad Whitson,Bill Miller,"60 degrees, Partly Cloudy.","7 mph, In From CF.",1:20 PM.,"40,017.",9,0.0,2.0,0,3
@@ -787,8 +777,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823300,2026-05-23,R,2026,Petco Park,San Diego Padres,Athletics,2.0,0.0,608337.0,669372.0,Laz Diaz,James Jean,"66 degrees, Partly Cloudy.","8 mph, L To R.",6:41 PM.,"42,616.",9,0.0,0.0,2,0
 824030,2026-05-23,R,2026,Angel Stadium,Los Angeles Angels,Texas Rangers,5.0,2.0,700712.0,543135.0,D.J. Reyburn,John Libka,"68 degrees, Clear.","7 mph, R To L.",7:06 PM.,"31,860.",9,2.0,0.0,3,1
 825080,2026-05-23,R,2026,Chase Field,Arizona Diamondbacks,Colorado Rockies,5.0,4.0,668678.0,547179.0,Rob Drake,Bruce Dreckman,"94 degrees, Clear.","1 mph, Varies.",7:11 PM.,"33,891.",9,0.0,0.0,5,2
-823543,2026-05-23,R,2026,Yankee Stadium,New York Yankees,Tampa Bay Rays,,,607074.0,607259.0,Sean Barber,Gabe Morales,"69 degrees, Cloudy.","15 mph, L To R.",1:08 PM.,"41,421.",9,0.0,0.0,2,0
-824840,2026-05-23,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Detroit Tigers,,,669432.0,675512.0,Lance Barrett,Alfonso Márquez,"62 degrees, Partly Cloudy.","5 mph, In From RF.",6:05 PM.,"19,735.",9,0.0,2.0,1,4
 822813,2026-05-24,R,2026,Rogers Centre,Toronto Blue Jays,Pittsburgh Pirates,1.0,4.0,656302.0,656605.0,Willie Traynor,Jim Wolf,"68 degrees, Roof Closed.","0 mph, None.",12:17 PM.,"41,354.",9,0.0,1.0,1,2
 824839,2026-05-24,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Detroit Tigers,5.0,3.0,687064.0,664285.0,Jonathan Parra,Austin Jones,"58 degrees, Overcast.","3 mph, In From CF.",12:37 PM.,"17,616.",9,0.0,0.0,0,2
 824840,2026-05-24,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Detroit Tigers,1.0,4.0,669432.0,675512.0,Lance Barrett,Alfonso Márquez,"62 degrees, Partly Cloudy.","5 mph, In From RF.",6:05 PM.,"19,735.",9,0.0,2.0,1,4
@@ -804,7 +792,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823297,2026-05-24,R,2026,Petco Park,San Diego Padres,Athletics,2.0,5.0,650633.0,665622.0,James Jean,Erich Bacchus,"66 degrees, Partly Cloudy.","9 mph, L To R.",1:12 PM.,"41,799.",9,0.0,1.0,0,4
 824921,2026-05-24,R,2026,Truist Park,Atlanta Braves,Washington Nationals,1.0,2.0,527048.0,656492.0,Brock Ballou,Scott Barry,"79 degrees, Cloudy.","7 mph, L To R.",4:32 PM.,"36,429.",9,0.0,0.0,0,1
 824028,2026-05-24,R,2026,Angel Stadium,Los Angeles Angels,Texas Rangers,2.0,1.0,672282.0,669022.0,John Libka,James Hoye,"73 degrees, Sunny.","6 mph, Out To CF.",4:21 PM.,"36,903.",9,0.0,0.0,1,1
-824514,2026-05-24,R,2026,Great American Ball Park,Cincinnati Reds,St. Louis Cardinals,,,592288.0,687273.0,Vic Carapazza,Brock Ballou,"83 degrees, Overcast.","5 mph, Out To LF.",1:42 PM.,"20,434.",9,0.0,2.0,1,2
 823380,2026-05-25,R,2026,PNC Park,Pittsburgh Pirates,Chicago Cubs,2.0,1.0,669387.0,676962.0,Mark Ripperger,Shane Livensparger,"73 degrees, Cloudy.","5 mph, Out To CF.",1:39 PM.,"22,174.",9,0.0,0.0,1,1
 824838,2026-05-25,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Tampa Bay Rays,9.0,7.0,680694.0,663556.0,Ryan Additon,Ryan Wills,"69 degrees, Rain.","2 mph, Out To LF.",1:37 PM.,"22,388.",13,0.0,0.0,0,0
 824598,2026-05-25,R,2026,Rate Field,Chicago White Sox,Minnesota Twins,3.0,1.0,641743.0,805673.0,Dan Iassogna,Adam Beck,"80 degrees, Partly Cloudy.","2 mph, Out To LF.",1:11 PM.,"30,114.",9,1.0,1.0,3,1
@@ -976,7 +963,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824351,2026-06-06,R,2026,Coors Field,Colorado Rockies,Milwaukee Brewers,1.0,7.0,688642.0,694819.0,Stu Scheurwater,Junior Valentine,"87 degrees, Partly Cloudy.","10 mph, Out To CF.",7:13 PM.,"30,320.",9,0.0,1.0,1,2
 823942,2026-06-06,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Los Angeles Angels,9.0,2.0,808967.0,686799.0,Jeremie Rehak,Dan Iassogna,"70 degrees, Clear.","4 mph, Out To RF.",7:10 PM.,"53,448.",9,9.0,1.0,9,1
 823292,2026-06-06,R,2026,Petco Park,San Diego Padres,New York Mets,3.0,2.0,656288.0,690997.0,Brian Walsh,Chad Fairchild,"68 degrees, Cloudy.","6 mph, L To R.",7:11 PM.,"40,770.",9,0.0,0.0,1,1
-823539,2026-06-06,R,2026,Yankee Stadium,New York Yankees,Boston Red Sox,,,607074.0,687562.0,Hunter Wendelstedt,Felix Neon,"76 degrees, Sunny.","5 mph, In From CF.",1:09 PM.,"47,314.",9,0.0,1.0,0,2
 824916,2026-06-07,R,2026,Truist Park,Atlanta Braves,Pittsburgh Pirates,3.0,2.0,693821.0,682254.0,Quinn Wolcott,Edwin Jimenez,"78 degrees, Cloudy.","4 mph, Calm.",1:35 PM.,"37,697.",9,0.0,1.0,0,2
 823453,2026-06-07,R,2026,Citizens Bank Park,Philadelphia Phillies,Chicago White Sox,9.0,5.0,605400.0,656457.0,Alex MacKay,Alan Porter,"85 degrees, Partly Cloudy.","15 mph, Out To RF.",1:36 PM.,"41,978.",9,1.0,0.0,7,5
 823537,2026-06-07,R,2026,Yankee Stadium,New York Yankees,Boston Red Sox,6.0,1.0,693645.0,624133.0,D.J. Reyburn,John Libka,"81 degrees, Partly Cloudy.","14 mph, Out To RF.",1:55 PM.,"46,144.",9,0.0,0.0,1,0
@@ -1037,7 +1023,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824346,2026-06-11,R,2026,Coors Field,Colorado Rockies,Chicago Cubs,3.0,9.0,663372.0,665795.0,Louie Krupa,Chris Guccione,"73 degrees, Sunny.","15 mph, In From CF.",1:11 PM.,"35,128.",9,0.0,0.0,2,6
 823371,2026-06-11,R,2026,PNC Park,Pittsburgh Pirates,Los Angeles Dodgers,6.0,8.0,656605.0,680736.0,Chris Conroy,Ben May,"72 degrees, Overcast.","11 mph, Out To LF.",6:41 PM.,"30,660.",9,0.0,0.0,4,5
 824827,2026-06-11,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Seattle Mariners,7.0,5.0,680694.0,693433.0,Emil Jimenez,Gabe Morales,"94 degrees, Cloudy.","6 mph, Out To RF.",7:12 PM.,"15,776.",9,0.0,1.0,7,5
-824589,2026-06-11,R,2026,Rate Field,Chicago White Sox,Atlanta Braves,,,641743.0,656550.0,Ron Kulpa,Scott Barry,"76 degrees, Sunny.","13 mph, L To R.",1:11 PM.,"17,052.",9,0.0,0.0,0,1
 823370,2026-06-12,R,2026,PNC Park,Pittsburgh Pirates,Miami Marlins,3.0,8.0,677952.0,645261.0,Junior Valentine,Rob Drake,"81 degrees, Partly Cloudy.","8 mph, Out To LF.",6:41 PM.,"19,587.",9,0.0,0.0,2,2
 822726,2026-06-12,R,2026,Nationals Park,Washington Nationals,Seattle Mariners,2.0,10.0,641793.0,682243.0,Cory Blaser,Jansen Visconti,"81 degrees, Cloudy.","6 mph, Out To CF.",8:56 PM.,"22,226.",9,0.0,0.0,1,8
 824826,2026-06-12,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,San Diego Padres,7.0,3.0,669358.0,656288.0,Ben May,Brennan Miller,"89 degrees, Partly Cloudy.","9 mph, Out To RF.",7:06 PM.,"25,458.",9,3.0,1.0,7,3
@@ -1082,7 +1067,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823212,2026-06-14,R,2026,Oracle Park,San Francisco Giants,Chicago Cubs,5.0,1.0,657277.0,669020.0,Clint Vondrak,Adam Hamari,"67 degrees, Sunny.","9 mph, Varies.",12:11 PM.,"40,093.",9,0.0,0.0,3,0
 824021,2026-06-14,R,2026,Angel Stadium,Los Angeles Angels,Tampa Bay Rays,3.0,8.0,680570.0,668984.0,Nestor Ceja,Charlie Ramos,"81 degrees, Sunny.","8 mph, R To L.",1:08 PM.,"34,048.",9,0.0,0.0,3,3
 824751,2026-06-14,R,2026,Fenway Park,Boston Red Sox,Texas Rangers,4.0,6.0,813349.0,543135.0,Jonathan Parra,Chad Whitson,"81 degrees, Overcast.","12 mph, Out To LF.",7:22 PM.,"32,006.",9,0.0,1.0,2,6
-824424,2026-06-14,R,2026,Progressive Field,Cleveland Guardians,Detroit Tigers,,,671106.0,672456.0,Tom Hanahan,Austin Jones,"80 degrees, Cloudy.","6 mph, L To R.",3:14 PM.,"23,562.",9,1.0,4.0,6,6
 823452,2026-06-15,R,2026,Citizens Bank Park,Philadelphia Phillies,Miami Marlins,7.0,0.0,554430.0,687473.0,Tripp Gibson,Sean Barber,"75 degrees, Partly Cloudy.","14 mph, L To R.",6:41 PM.,"39,241.",9,0.0,0.0,5,0
 822724,2026-06-15,R,2026,Nationals Park,Washington Nationals,Kansas City Royals,7.0,3.0,674841.0,687765.0,Chad Whitson,Chad Fairchild,"76 degrees, Partly Cloudy.","11 mph, In From LF.",6:47 PM.,"14,444.",9,0.0,0.0,7,3
 824505,2026-06-15,R,2026,Great American Ball Park,Cincinnati Reds,New York Mets,12.0,0.0,695505.0,668964.0,Mark Wegner,Carlos Torres,"74 degrees, Partly Cloudy.","3 mph, Out To LF.",7:11 PM.,"19,853.",9,3.0,0.0,9,0
@@ -1098,7 +1082,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824750,2026-06-16,R,2026,Fenway Park,Boston Red Sox,Toronto Blue Jays,1.0,6.0,801139.0,656302.0,Ron Kulpa,Scott Barry,"77 degrees, Partly Cloudy.","3 mph, Out To RF.",6:45 PM.,"32,392.",9,0.0,0.0,0,3
 823535,2026-06-16,R,2026,Yankee Stadium,New York Yankees,Chicago White Sox,12.0,2.0,543037.0,663436.0,Mike Muchlinski,Emil Jimenez,"72 degrees, Clear.","8 mph, Out To LF.",7:08 PM.,"36,723.",9,0.0,1.0,11,1
 824504,2026-06-16,R,2026,Great American Ball Park,Cincinnati Reds,New York Mets,5.0,3.0,663903.0,673540.0,Carlos Torres,Nate Tomlinson,"74 degrees, Cloudy.","9 mph, R To L.",7:10 PM.,"28,710.",9,4.0,0.0,5,1
-824912,2026-06-16,R,2026,Truist Park,Atlanta Braves,San Francisco Giants,2.0,7.0,656550.0,605288.0,Jordan Baker,Junior Valentine,"69 degrees, Rain.","4 mph, L To R.",7:16 PM.,"31,266.",9,2.0,1.0,2,5
 823775,2026-06-16,R,2026,American Family Field,Milwaukee Brewers,Cleveland Guardians,2.0,1.0,688107.0,677944.0,Ryan Additon,Ryan Wills,"74 degrees, Roof Closed.","0 mph, None.",6:40 PM.,"30,025.",9,0.0,0.0,1,0
 823045,2026-06-16,R,2026,Busch Stadium,St. Louis Cardinals,San Diego Padres,3.0,2.0,669467.0,650633.0,Nic Lentz,James Jean,"77 degrees, Partly Cloudy.","10 mph, Out To RF.",6:46 PM.,"29,604.",9,0.0,0.0,3,1
 824667,2026-06-16,R,2026,Wrigley Field,Chicago Cubs,Colorado Rockies,2.0,5.0,665795.0,663372.0,Willie Traynor,John Libka,"71 degrees, Partly Cloudy.","15 mph, Out To RF.",7:04 PM.,"35,183.",9,1.0,0.0,2,5
@@ -1131,7 +1114,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823533,2026-06-18,R,2026,Yankee Stadium,New York Yankees,Chicago White Sox,1.0,5.0,677960.0,663542.0,Gabe Morales,Doug Eddings,"86 degrees, Partly Cloudy.","6 mph, Varies.",7:09 PM.,"44,809.",9,0.0,0.0,1,1
 824098,2026-06-18,R,2026,Kauffman Stadium,Kansas City Royals,St. Louis Cardinals,14.0,6.0,702070.0,669461.0,Ryan Blakney,Tripp Gibson,"76 degrees, Partly Cloudy.","7 mph, L To R.",6:40 PM.,"18,363.",9,1.0,2.0,11,4
 824989,2026-06-18,R,2026,Sutter Health Park,Athletics,Los Angeles Angels,5.0,0.0,695611.0,696270.0,Shane Livensparger,Dan Merzel,"75 degrees, Clear.","15 mph, Out To CF.",6:41 PM.,"9,245.",9,5.0,0.0,5,0
-824911,2026-06-18,R,2026,Truist Park,Atlanta Braves,San Francisco Giants,,,693821.0,683627.0,Adrian Johnson,Ramon De Jesus,"92 degrees, Partly Cloudy.","5 mph, Out To RF.",6:06 PM.,"29,349.",9,1.0,1.0,3,2
 824663,2026-06-19,R,2026,Wrigley Field,Chicago Cubs,Toronto Blue Jays,16.0,2.0,676962.0,592332.0,Lance Barrett,Malachi Moore,"71 degrees, Sunny.","6 mph, L To R.",1:20 PM.,"40,275.",9,7.0,0.0,7,1
 824264,2026-06-19,R,2026,Comerica Park,Detroit Tigers,Chicago White Sox,4.0,3.0,669373.0,685126.0,Rob Drake,Stu Scheurwater,"75 degrees, Clear.","10 mph, R To L.",6:41 PM.,"41,353.",9,2.0,1.0,2,2
 823534,2026-06-19,R,2026,Yankee Stadium,New York Yankees,Cincinnati Reds,5.0,0.0,693645.0,695076.0,Chris Segal,Laz Diaz,"77 degrees, Partly Cloudy.","15 mph, Out To RF.",7:10 PM.,"42,420.",9,0.0,0.0,4,0
@@ -1174,7 +1156,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823934,2026-06-21,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Baltimore Orioles,1.0,12.0,686218.0,687064.0,Derek Thomas,Chris Guccione,"74 degrees, Sunny.","6 mph, Out To CF.",1:11 PM.,"50,215.",9,1.0,2.0,1,6
 823123,2026-06-21,R,2026,T-Mobile Park,Seattle Mariners,Boston Red Sox,3.0,1.0,669302.0,801139.0,Adrian Johnson,Quinn Wolcott,"70 degrees, Sunny.","5 mph, Out To RF.",1:11 PM.,"45,577.",9,0.0,0.0,2,1
 823449,2026-06-21,R,2026,Citizens Bank Park,Philadelphia Phillies,New York Mets,6.0,2.0,554430.0,656849.0,Dillon Wilson,Bill Miller,"83 degrees, Partly Cloudy.","10 mph, Out To RF.",7:25 PM.,"41,552.",9,2.0,0.0,6,1
-824664,2026-06-21,R,2026,Wrigley Field,Chicago Cubs,Toronto Blue Jays,,,656849.0,656302.0,Chris Segal,Laz Diaz,"76 degrees, Cloudy.","5 mph, Out To LF.",1:20 PM.,"39,476.",11,0.0,1.0,0,1
 824261,2026-06-22,R,2026,Comerica Park,Detroit Tigers,New York Yankees,5.0,3.0,664285.0,543037.0,Jim Wolf,Alex MacKay,"75 degrees, Partly Cloudy.","13 mph, In From CF.",6:13 PM.,"24,284.",9,0.0,0.0,5,1
 822964,2026-06-22,R,2026,Tropicana Field,Tampa Bay Rays,Kansas City Royals,1.0,2.0,656876.0,608379.0,Gabe Morales,Doug Eddings,"72 degrees, Dome.","0 mph, None.",6:40 PM.,"11,298.",9,0.0,0.0,1,2
 823851,2026-06-22,R,2026,loanDepot park,Miami Marlins,Texas Rangers,3.0,4.0,663969.0,641302.0,Cory Blaser,Jansen Visconti,"72 degrees, Roof Closed.","0 mph, None.",6:40 PM.,"20,008.",9,0.0,0.0,1,2
@@ -1187,7 +1168,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824344,2026-06-22,R,2026,Coors Field,Colorado Rockies,Boston Red Sox,3.0,2.0,663372.0,687562.0,Chris Conroy,Ben May,"89 degrees, Partly Cloudy.","3 mph, Out To CF.",6:41 PM.,"26,910.",9,0.0,0.0,0,0
 824016,2026-06-22,R,2026,Angel Stadium,Los Angeles Angels,Baltimore Orioles,1.0,6.0,691951.0,680694.0,John Libka,D.J. Reyburn,"74 degrees, Clear.","10 mph, Out To CF.",6:39 PM.,"28,431.",9,0.0,1.0,0,5
 823288,2026-06-22,R,2026,Petco Park,San Diego Padres,Atlanta Braves,1.0,0.0,650633.0,656550.0,Shane Livensparger,Dan Merzel,"69 degrees, Clear.","8 mph, L To R.",7:11 PM.,"42,572.",9,0.0,0.0,1,0
-823613,2026-06-22,R,2026,Citi Field,New York Mets,Chicago Cubs,,,690997.0,665871.0,Austin Jones,John Bacon,"81 degrees, Sunny.","9 mph, L To R.",1:10 PM.,"31,951.",9,0.0,0.0,3,3
 822799,2026-06-23,R,2026,Rogers Centre,Toronto Blue Jays,Houston Astros,7.0,9.0,669456.0,663567.0,Brian Walsh,Chad Whitson,"76 degrees, Partly Cloudy.","14 mph, R To L.",4:07 PM.,"38,633.",11,0.0,1.0,2,4
 823365,2026-06-23,R,2026,PNC Park,Pittsburgh Pirates,Seattle Mariners,2.0,3.0,656605.0,669923.0,Hunter Wendelstedt,Vic Carapazza,"73 degrees, Clear.","11 mph, Calm.",6:41 PM.,"16,015.",9,0.0,0.0,2,1
 822963,2026-06-23,R,2026,Tropicana Field,Tampa Bay Rays,Kansas City Royals,5.0,12.0,663556.0,679883.0,Doug Eddings,Mike Muchlinski,"72 degrees, Dome.","0 mph, None.",6:40 PM.,"11,171.",9,1.0,2.0,1,6
@@ -1227,7 +1207,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 822797,2026-06-25,R,2026,Rogers Centre,Toronto Blue Jays,Texas Rangers,5.0,6.0,592332.0,669022.0,Roberto Ortiz,Jim Wolf,"62 degrees, Cloudy.","11 mph, L To R.",7:08 PM.,"35,273.",9,0.0,1.0,3,6
 823612,2026-06-25,R,2026,Citi Field,New York Mets,Chicago Cubs,3.0,4.0,642547.0,571510.0,Jordan Baker,Junior Valentine,"76 degrees, Partly Cloudy.","12 mph, Out To LF.",7:10 PM.,"36,035.",10,0.0,0.0,0,0
 824747,2026-06-25,R,2026,Fenway Park,Boston Red Sox,New York Yankees,6.0,3.0,813349.0,693645.0,Todd Tichenor,Tyler Jones,"85 degrees, Partly Cloudy.","3 mph, Out To LF.",7:11 PM.,"36,307.",9,0.0,1.0,4,2
-823042,2026-06-25,R,2026,Busch Stadium,St. Louis Cardinals,Arizona Diamondbacks,,,700241.0,694297.0,Alfonso Márquez,Mike Estabrook,"78 degrees, Partly Cloudy.","4 mph, In From CF.",4:15 PM.,"32,381.",9,2.0,0.0,2,4
 824255,2026-06-26,R,2026,Comerica Park,Detroit Tigers,Houston Astros,8.0,0.0,672456.0,681293.0,Lance Barksdale,Will Little,"73 degrees, Partly Cloudy.","5 mph, In From LF.",6:40 PM.,"30,036.",9,0.0,0.0,8,0
 823363,2026-06-26,R,2026,PNC Park,Pittsburgh Pirates,Cincinnati Reds,4.0,6.0,694973.0,671096.0,Jeremie Rehak,Dan Iassogna,"73 degrees, Partly Cloudy.","6 mph, Out To LF.",6:42 PM.,"25,186.",9,1.0,0.0,2,4
 824824,2026-06-26,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Washington Nationals,3.0,1.0,669432.0,674841.0,Alex Tosi,Cory Blaser,"83 degrees, Cloudy.","5 mph, In From LF.",7:06 PM.,"26,901.",9,0.0,0.0,2,1
@@ -1433,7 +1412,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823278,2026-07-10,R,2026,Petco Park,San Diego Padres,Toronto Blue Jays,3.0,5.0,676664.0,669456.0,Clint Vondrak,Adam Hamari,"70 degrees, Partly Cloudy.","6 mph, L To R.",6:41 PM.,"41,886.",9,2.0,0.0,2,5
 823927,2026-07-10,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Arizona Diamondbacks,3.0,9.0,669165.0,593958.0,Austin Jones,Rob Drake,"77 degrees, Partly Cloudy.","8 mph, Out To CF.",7:10 PM.,"47,727.",9,2.0,2.0,2,6
 823200,2026-07-10,R,2026,Oracle Park,San Francisco Giants,Colorado Rockies,3.0,4.0,592662.0,685299.0,Ryan Wills,Lance Barksdale,"58 degrees, Clear.","13 mph, Varies.",7:16 PM.,"34,144.",9,0.0,0.0,1,1
-823357,2026-07-10,R,2026,PNC Park,Pittsburgh Pirates,Milwaukee Brewers,,,677952.0,687075.0,Lance Barrett,John Bacon,"73 degrees, Overcast.","1 mph, Out To CF.",12:07 PM.,"22,484.",9,2.0,0.0,3,5
 823357,2026-07-11,R,2026,PNC Park,Pittsburgh Pirates,Milwaukee Brewers,7.0,6.0,677952.0,687075.0,Lance Barrett,John Bacon,"73 degrees, Overcast.","1 mph, Out To CF.",12:07 PM.,"22,484.",9,2.0,0.0,3,5
 823356,2026-07-11,R,2026,PNC Park,Pittsburgh Pirates,Milwaukee Brewers,3.0,2.0,696149.0,675660.0,Malachi Moore,Alfonso Márquez,"82 degrees, Partly Cloudy.","5 mph, R To L.",4:17 PM.,"29,080.",9,0.0,0.0,2,2
 823682,2026-07-11,R,2026,Target Field,Minnesota Twins,Los Angeles Angels,5.0,3.0,657746.0,696270.0,Chris Segal,Laz Diaz,"86 degrees, Partly Cloudy.","7 mph, Out To LF.",1:38 PM.,"21,286.",9,0.0,0.0,3,2
@@ -1480,7 +1458,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824981,2026-07-17,R,2026,Sutter Health Park,Athletics,Washington Nationals,4.0,23.0,695611.0,676917.0,John Libka,James Hoye,"85 degrees, Clear.","11 mph, Out To LF.",6:41 PM.,"11,087.",9,0.0,0.0,2,8
 825060,2026-07-17,R,2026,Chase Field,Arizona Diamondbacks,St. Louis Cardinals,4.0,5.0,518876.0,700241.0,Bill Miller,Brian Walsh,"77 degrees, Roof Closed.","0 mph, None.",6:41 PM.,"29,931.",9,0.0,2.0,2,3
 823115,2026-07-17,R,2026,T-Mobile Park,Seattle Mariners,San Francisco Giants,0.0,7.0,682243.0,694738.0,Mark Ripperger,Dan Bellino,"72 degrees, Clear.","6 mph, Out To CF.",7:11 PM.,"42,595.",9,0.0,0.0,0,2
-824414,2026-07-17,R,2026,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,,,668909.0,683003.0,Roberto Ortiz,John Bacon,"89 degrees, Partly Cloudy.","14 mph, Out To RF.",1:10 PM.,"27,989.",9,0.0,0.0,1,2
 824414,2026-07-18,R,2026,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,1.0,7.0,668909.0,683003.0,Roberto Ortiz,John Bacon,"89 degrees, Partly Cloudy.","14 mph, Out To RF.",1:10 PM.,"27,989.",9,0.0,0.0,1,2
 824412,2026-07-18,R,2026,Progressive Field,Cleveland Guardians,Pittsburgh Pirates,5.0,3.0,671106.0,682254.0,Jim Wolf,Alex MacKay,"79 degrees, Cloudy.","6 mph, L To R.",8:25 PM.,"32,997.",9,0.0,0.0,0,3
 824657,2026-07-18,R,2026,Wrigley Field,Chicago Cubs,Minnesota Twins,6.0,2.0,571510.0,671737.0,Nate Tomlinson,James Jean,"81 degrees, Partly Cloudy.","12 mph, L To R.",1:21 PM.,"39,508.",9,1.0,0.0,5,1
@@ -1496,7 +1473,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823116,2026-07-18,R,2026,T-Mobile Park,Seattle Mariners,San Francisco Giants,4.0,3.0,693433.0,657277.0,Dan Bellino,Dexter Kelley,"74 degrees, Clear.","8 mph, L To R.",5:09 PM.,"43,485.",10,0.0,0.0,0,1
 824979,2026-07-18,R,2026,Sutter Health Park,Athletics,Washington Nationals,15.0,1.0,669372.0,641793.0,James Hoye,Jacob Metz,"88 degrees, Clear.","9 mph, Out To CF.",7:06 PM.,"11,138.",9,5.0,0.0,6,0
 824008,2026-07-18,R,2026,Angel Stadium,Los Angeles Angels,Detroit Tigers,0.0,7.0,680570.0,669373.0,Ryan Wills,Lance Barksdale,"79 degrees, Clear.","6 mph, R To L.",7:08 PM.,"32,003.",9,0.0,4.0,0,7
-823523,2026-07-18,R,2026,Yankee Stadium,New York Yankees,Los Angeles Dodgers,,,693645.0,808967.0,Rob Drake,Edwin Jimenez,"76 degrees, Sunny.","15 mph, Out To RF.",12:40 PM.,"43,305.",9,0.0,0.0,1,3
 822786,2026-07-19,R,2026,Rogers Centre,Toronto Blue Jays,Chicago White Sox,0.0,3.0,702056.0,680732.0,Tom Hanahan,Ron Kulpa,"68 degrees, Sunny.","3 mph, Out To CF.",12:15 PM.,"41,288.",9,0.0,0.0,0,1
 823523,2026-07-19,R,2026,Yankee Stadium,New York Yankees,Los Angeles Dodgers,2.0,8.0,693645.0,808967.0,Rob Drake,Edwin Jimenez,"76 degrees, Sunny.","15 mph, Out To RF.",12:40 PM.,"43,305.",9,0.0,0.0,1,3
 823521,2026-07-19,R,2026,Yankee Stadium,New York Yankees,Los Angeles Dodgers,2.0,1.0,642232.0,694361.0,Jordan Baker,Stu Scheurwater,"76 degrees, Partly Cloudy.","10 mph, Varies.",7:20 PM.,"43,378.",9,1.0,0.0,1,0
@@ -1541,8 +1517,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824005,2026-07-21,R,2026,Angel Stadium,Los Angeles Angels,St. Louis Cardinals,5.0,1.0,700712.0,669461.0,Mark Ripperger,Dan Bellino,"83 degrees, Clear.","9 mph, Out To CF.",6:39 PM.,"33,151.",9,5.0,0.0,5,1
 825056,2026-07-21,R,2026,Chase Field,Arizona Diamondbacks,Athletics,6.0,5.0,684442.0,678022.0,Hunter Wendelstedt,Vic Carapazza,"75 degrees, Roof Closed.","0 mph, None.",6:40 PM.,"19,709.",10,3.0,0.0,3,1
 823114,2026-07-21,R,2026,T-Mobile Park,Seattle Mariners,Cincinnati Reds,2.0,4.0,622491.0,695505.0,Chad Fairchild,Bill Miller,"88 degrees, Clear.","3 mph, L To R.",6:41 PM.,"35,239.",9,0.0,1.0,0,3
-823519,2026-07-21,R,2026,Yankee Stadium,New York Yankees,Pittsburgh Pirates,,,608331.0,696149.0,Ramon De Jesus,Adrian Johnson,"82 degrees, Partly Cloudy.","15 mph, Out To RF.",7:09 PM.,"41,064.",9,0.0,0.0,0,0
-824735,2026-07-21,R,2026,Fenway Park,Boston Red Sox,Baltimore Orioles,,,687562.0,665152.0,Felix Neon,Austin Jones,"82 degrees, Partly Cloudy.","11 mph, Out To CF.",1:35 PM.,"35,039.",9,4.0,0.0,6,2
 823518,2026-07-22,R,2026,Yankee Stadium,New York Yankees,Pittsburgh Pirates,3.0,5.0,543037.0,656605.0,Quinn Wolcott,Brock Ballou,"83 degrees, Partly Cloudy.","14 mph, Out To CF.",1:08 PM.,"43,290.",10,0.0,0.0,0,2
 823519,2026-07-22,R,2026,Yankee Stadium,New York Yankees,Pittsburgh Pirates,2.0,0.0,608331.0,696149.0,Ramon De Jesus,Adrian Johnson,"82 degrees, Partly Cloudy.","15 mph, Out To RF.",7:09 PM.,"41,064.",9,0.0,0.0,0,0
 824735,2026-07-22,R,2026,Fenway Park,Boston Red Sox,Baltimore Orioles,6.0,3.0,687562.0,665152.0,Felix Neon,Austin Jones,"82 degrees, Partly Cloudy.","11 mph, Out To CF.",1:35 PM.,"35,039.",9,4.0,0.0,6,2
@@ -1621,7 +1595,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 824001,2026-07-27,R,2026,Angel Stadium,Los Angeles Angels,Houston Astros,4.0,6.0,700712.0,837227.0,Chris Guccione,David Rackley,"82 degrees, Clear.","9 mph, Out To RF.",6:39 PM.,"30,121.",9,2.0,0.0,4,1
 824977,2026-07-27,R,2026,Sutter Health Park,Athletics,Boston Red Sox,2.0,4.0,678022.0,801139.0,Carlos Torres,Mark Wegner,"88 degrees, Clear.","8 mph, R To L.",6:40 PM.,"10,486.",9,1.0,0.0,1,0
 823195,2026-07-27,R,2026,Oracle Park,San Francisco Giants,Milwaukee Brewers,3.0,0.0,641816.0,687075.0,Doug Eddings,Mike Muchlinski,"63 degrees, Clear.","13 mph, Varies.",6:46 PM.,"35,107.",9,0.0,0.0,3,0
-824490,2026-07-27,R,2026,Great American Ball Park,Cincinnati Reds,Cleveland Guardians,,,695505.0,677944.0,Alfonso Márquez,Steven Jaschinski,"84 degrees, Partly Cloudy.","10 mph, Varies.",1:41 PM.,"16,866.",9,0.0,4.0,5,5
 824490,2026-07-28,R,2026,Great American Ball Park,Cincinnati Reds,Cleveland Guardians,5.0,6.0,695505.0,677944.0,Alfonso Márquez,Steven Jaschinski,"84 degrees, Partly Cloudy.","10 mph, Varies.",1:41 PM.,"16,866.",9,0.0,4.0,5,5
 824489,2026-07-28,R,2026,Great American Ball Park,Cincinnati Reds,Cleveland Guardians,2.0,0.0,657571.0,668909.0,Mike Estabrook,Lance Barrett,"84 degrees, Partly Cloudy.","9 mph, Out To RF.",7:11 PM.,"26,928.",9,1.0,0.0,2,0
 824243,2026-07-28,R,2026,Comerica Park,Detroit Tigers,Baltimore Orioles,14.0,0.0,675512.0,665152.0,Chad Whitson,Brian Walsh,"79 degrees, Partly Cloudy.","7 mph, Out To RF.",6:40 PM.,"27,453.",9,2.0,0.0,9,0
@@ -1637,7 +1610,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823275,2026-07-28,R,2026,Petco Park,San Diego Padres,Colorado Rockies,8.0,7.0,650633.0,547179.0,Jeremie Rehak,Dan Iassogna,"74 degrees, Clear.","7 mph, L To R.",6:41 PM.,"42,433.",9,0.0,0.0,3,4
 823193,2026-07-28,R,2026,Oracle Park,San Francisco Giants,Milwaukee Brewers,2.0,8.0,694738.0,701656.0,Mike Muchlinski,Emil Jimenez,"65 degrees, Clear.","11 mph, Varies.",6:46 PM.,"38,021.",9,0.0,0.0,0,5
 823923,2026-07-28,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,Seattle Mariners,6.0,7.0,680736.0,622491.0,Vic Carapazza,Edwin Moscoso,"77 degrees, Clear.","6 mph, Out To CF.",7:10 PM.,"51,686.",9,1.0,0.0,5,4
-823598,2026-07-28,R,2026,Citi Field,New York Mets,Atlanta Braves,,,681035.0,519242.0,Manny Gonzalez,Tom Hanahan,"77 degrees, Cloudy.","6 mph, Out To RF.",7:10 PM.,"22,672.",9,0.0,0.0,0,0
 823837,2026-07-29,R,2026,loanDepot park,Miami Marlins,Philadelphia Phillies,8.0,6.0,687473.0,666200.0,Shane Livensparger,Dan Merzel,"72 degrees, Roof Closed.","0 mph, None.",12:10 PM.,"14,350.",9,0.0,0.0,3,6
 823351,2026-07-29,R,2026,PNC Park,Pittsburgh Pirates,Arizona Diamondbacks,0.0,3.0,683003.0,593958.0,Chris Conroy,Ben May,"73 degrees, Cloudy.","10 mph, Out To RF.",12:36 PM.,"19,716.",9,0.0,0.0,0,2
 822702,2026-07-29,R,2026,Nationals Park,Washington Nationals,Toronto Blue Jays,2.0,5.0,641793.0,702056.0,Lance Barksdale,Will Little,"81 degrees, Partly Cloudy.","4 mph, In From LF.",1:06 PM.,"20,044.",9,0.0,0.0,1,0
@@ -2384,7 +2356,6 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 823089,2026-09-22,R,2026,T-Mobile Park,Seattle Mariners,Houston Astros,0.0,7.0,669302.0,664299.0,Ryan Blakney,Marvin Hudson,"68 degrees, Clear.","4 mph, Out To CF.",6:41 PM.,"33,382.",9,0.0,1.0,0,4
 823166,2026-09-22,R,2026,Oracle Park,San Francisco Giants,Minnesota Twins,2.0,3.0,683627.0,671737.0,Steven Jaschinski,Dillon Wilson,"61 degrees, Partly Cloudy.","8 mph, Out To CF.",6:46 PM.,"28,079.",9,0.0,0.0,1,0
 823897,2026-09-22,R,2026,UNIQLO Field at Dodger Stadium,Los Angeles Dodgers,San Diego Padres,7.0,0.0,592779.0,650633.0,Lance Barksdale,Ryan Additon,"73 degrees, Clear.","7 mph, Out To CF.",7:10 PM.,"46,066.",9,0.0,0.0,5,0
-824785,2026-09-22,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Toronto Blue Jays,,,605135.0,453286.0,Mark Wegner,Austin Jones,"63 degrees, Overcast.","7 mph, In From CF.",1:37 PM.,"10,562.",9,0.0,0.0,4,0
 824223,2026-09-23,R,2026,Comerica Park,Detroit Tigers,Washington Nationals,2.0,4.0,664285.0,663992.0,Mike Muchlinski,Doug Eddings,"65 degrees, Sunny.","14 mph, In From LF.",1:12 PM.,"21,373.",9,0.0,0.0,0,0
 824785,2026-09-23,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Toronto Blue Jays,4.0,2.0,605135.0,453286.0,Mark Wegner,Austin Jones,"63 degrees, Overcast.","7 mph, In From CF.",1:37 PM.,"10,562.",9,0.0,0.0,4,0
 824784,2026-09-23,R,2026,Oriole Park at Camden Yards,Baltimore Orioles,Toronto Blue Jays,4.0,2.0,694346.0,669310.0,Nate Tomlinson,Tyler Jones,"65 degrees, Partly Cloudy.","15 mph, In From CF.",6:35 PM.,"19,824.",9,3.0,0.0,4,0
@@ -2481,3 +2452,4 @@ game_pk,date,game_type,season,venue,home,away,home_runs,away_runs,home_sp,away_s
 849822,2026-10-07,D,2026,Truist Park,Atlanta Braves,Los Angeles Dodgers,1.0,4.0,641816.0,607192.0,Tripp Gibson,Jim Wolf,"79 degrees, Clear.","3 mph, Varies.",6:09 PM.,"41,173.",9,1.0,0.0,1,1
 849838,2026-10-07,D,2026,Yankee Stadium,New York Yankees,Tampa Bay Rays,3.0,4.0,608331.0,607259.0,Dan Bellino,Ben May,"64 degrees, Clear.","9 mph, R To L.",8:09 PM.,"48,865.",9,0.0,0.0,2,2
 849827,2026-10-07,D,2026,Petco Park,San Diego Padres,Milwaukee Brewers,1.0,3.0,621111.0,688107.0,Nic Lentz,Quinn Wolcott,"81 degrees, Clear.","6 mph, In From LF.",7:08 PM.,"47,712.",9,0.0,0.0,1,2
+849832,2026-10-08,D,2026,Rate Field,Chicago White Sox,Cleveland Guardians,5.0,9.0,696146.0,800048.0,Jansen Visconti,Vic Carapazza,"65 degrees, Clear.","3 mph, In From CF.",7:08 PM.,"39,920.",9,0.0,0.0,4,3
