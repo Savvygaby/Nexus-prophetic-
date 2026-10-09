@@ -1,0 +1,26 @@
+{
+ "KXMLBHR": {
+  "end_period_ts": 1791417600,
+  "open_interest_fp": "69.17",
+  "price": {
+   "close_dollars": "0.0700",
+   "high_dollars": "0.0700",
+   "low_dollars": "0.0700",
+   "mean_dollars": "0.0700",
+   "open_dollars": "0.0700"
+  },
+  "volume_fp": "69.17",
+  "yes_ask": {
+   "close_dollars": "0.0600",
+   "high_dollars": "0.0800",
+   "low_dollars": "0.0600",
+   "open_dollars": "0.0800"
+  },
+  "yes_bid": {
+   "close_dollars": "0.0500",
+   "high_dollars": "0.0500",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
