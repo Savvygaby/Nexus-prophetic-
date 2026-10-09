@@ -1,0 +1,24 @@
+name: chronos-forecasts
+on:
+  workflow_dispatch:
+  push:
+    paths: ['research/run_chronos.py', 'research/chronos_in.json']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -q "torch==2.4.1" --index-url https://download.pytorch.org/whl/cpu && pip install -q chronos-forecasting
+      - run: python research/run_chronos.py
+      - name: Push output
+        if: always()
+        run: |
+          mkdir -p /tmp/co && cp research/chronos_out.json /tmp/co/ 2>/dev/null || exit 0
+          cd /tmp/co && git init -q && git checkout -q -b data-chronos && git add . && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm chronos
+          git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data-chronos
