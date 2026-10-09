@@ -1,0 +1,26 @@
+{
+ "KXNFLPASSYDS": {
+  "end_period_ts": 1791169200,
+  "open_interest_fp": "58.76",
+  "price": {
+   "close_dollars": "0.0500",
+   "high_dollars": "0.1800",
+   "low_dollars": "0.0500",
+   "mean_dollars": "0.1299",
+   "open_dollars": "0.1800"
+  },
+  "volume_fp": "68.76",
+  "yes_ask": {
+   "close_dollars": "0.0800",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.0800",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.0500",
+   "high_dollars": "0.1600",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
