@@ -1,1 +1,1 @@
-{"sports": ["nfl"], "pinnacle": false, "mlb_bullpen": false, "mlb_fresh": false, "weather": [], "mlb_days": 1, "ts": "2026-10-13T17:15Z"}
+{"sports": ["nfl", "mlb"], "pinnacle": false, "mlb_bullpen": true, "mlb_fresh": true, "weather": [], "mlb_days": 2, "ts": "2026-10-13T19:26Z"}
