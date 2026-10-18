@@ -53,6 +53,31 @@ for ser in WANT:
     if k is None:
         time.sleep(3); k = get(f'https://api.elections.kalshi.com/trade-api/v2/events?series_ticker={ser}&with_nested_markets=true&status=open&limit=200', f'kalshi_{ser}_retry')
     if k: save(f'kalshi/{ser}.json', k)
+
+# ======================= Polymarket NFL (keyless public Gamma + Data APIs; request.json 'polymarket': true) =======================
+if REQ.get('polymarket'):
+    try:
+        evs = []
+        for tag in ('nfl', 'american-football'):
+            for off in range(0, 600, 100):
+                e = get(f'https://gamma-api.polymarket.com/events?tag_slug={tag}&closed=false&limit=100&offset={off}', f'poly_{tag}_{off}')
+                if not e: break
+                evs += e
+                if len(e) < 100: break
+        seen, uniq = set(), []
+        for e in evs:
+            if e.get('id') in seen: continue
+            seen.add(e.get('id')); uniq.append(e)
+        save('polymarket/nfl_events.json', uniq)
+        mk = [m for e in uniq for m in e.get('markets', []) if m.get('conditionId')]
+        mk.sort(key=lambda m: -float(m.get('volume') or 0))
+        trades = {}
+        for m in mk[:120]:
+            t = get(f"https://data-api.polymarket.com/trades?market={m['conditionId']}&limit=200", 'poly_trades')
+            if t: trades[m['conditionId']] = t
+            time.sleep(0.2)
+        save('polymarket/nfl_trades.json', trades)
+    except Exception as ex: LOG['errors'].append(dict(tag='polymarket', err=str(ex)[:200]))
 # Polymarket (keyless gamma API): sports events with all their markets (moneyline, spreads, totals, props if listed)
 for tag in ('nfl', 'mlb'):
     for off in range(0, 1500, 100):
