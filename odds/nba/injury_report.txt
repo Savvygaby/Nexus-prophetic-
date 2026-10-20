@@ -1,0 +1,53 @@
+Injury Report: 10/20/26 01:00 PM
+GameDate GameTime Matchup Team PlayerName CurrentStatus Reason
+10/20/2026 03:00(ET) BOS@DET BostonCeltics Carter,Devin Out Injury/Illness-Illness
+DetroitPistons Harkless,Elijah Out GLeague-Two-Way
+Jones,Isaac Out GLeague-Two-Way
+Onyenso,Ugonna Out GLeague-Two-Way
+Prince,Taurean Out PersonalReasons
+Injury/Illness-LowBackStress
+07:00(ET) PHI@NYK Philadelphia76ers Barlow,Dominick Out
+Reaction
+Bona,Adem Questionable Injury/Illness-LeftFootSprain
+Fall,Tacko Out Injury/Illness-LeftQuadricepsStrain
+Injury/Illness-RightAchillesTendon
+Hukporti,Ariel Out
+Rupture/Tear
+Injury/Illness-LeftHamstring
+Simons,Anfernee Questionable
+Tightness/Soreness
+Wade,Dean Questionable Injury/Illness-LeftAnkleSprain
+Injury/Illness-RightAchillesTendon
+09:30(ET) OKC@SAS OklahomaCityThunder Oweh,Otega Out
+Repair/Surgery
+Sorber,Thomas Out Injury/Illness-RightKneeSurgery
+Topic,Nikola Out Injury/Illness-LowBackSurgery
+SanAntonioSpurs Harris,Tobias Out Injury/Illness-LeftCalfStrain
+Page1of3
+Injury Report: 10/20/26 01:00 PM
+Quaintance,Jayden Out Injury/Illness-RightKneeSurgery
+10/21/2026 07:00(ET) ATL@ORL AtlantaHawks NOTYETSUBMITTED
+OrlandoMagic NOTYETSUBMITTED
+MIL@WAS MilwaukeeBucks NOTYETSUBMITTED
+WashingtonWizards NOTYETSUBMITTED
+07:30(ET) CHA@BKN CharlotteHornets NOTYETSUBMITTED
+BrooklynNets NOTYETSUBMITTED
+CHI@TOR ChicagoBulls NOTYETSUBMITTED
+TorontoRaptors NOTYETSUBMITTED
+MIN@MIA MinnesotaTimberwolves NOTYETSUBMITTED
+MiamiHeat NOTYETSUBMITTED
+08:00(ET) IND@NOP IndianaPacers NOTYETSUBMITTED
+NewOrleansPelicans NOTYETSUBMITTED
+UTA@MEM UtahJazz NOTYETSUBMITTED
+MemphisGrizzlies NOTYETSUBMITTED
+08:30(ET) DAL@HOU DallasMavericks NOTYETSUBMITTED
+HoustonRockets NOTYETSUBMITTED
+10:00(ET) GSW@LAL GoldenStateWarriors NOTYETSUBMITTED
+LosAngelesLakers NOTYETSUBMITTED
+Page2of3
+Injury Report: 10/20/26 01:00 PM
+PHX@POR PhoenixSuns NOTYETSUBMITTED
+PortlandTrailBlazers NOTYETSUBMITTED
+10:30(ET) SAC@LAC SacramentoKings NOTYETSUBMITTED
+LAClippers NOTYETSUBMITTED
+Page3of3
