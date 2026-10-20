@@ -1,0 +1,26 @@
+{
+ "KXNBASPREAD": {
+  "end_period_ts": 1792209600,
+  "open_interest_fp": "953.92",
+  "price": {
+   "close_dollars": "0.0900",
+   "high_dollars": "0.2500",
+   "low_dollars": "0.0900",
+   "mean_dollars": "0.2290",
+   "open_dollars": "0.2500"
+  },
+  "volume_fp": "953.92",
+  "yes_ask": {
+   "close_dollars": "0.2700",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.2100",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.0800",
+   "high_dollars": "0.2500",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
