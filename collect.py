@@ -274,6 +274,18 @@ if REQ.get('nba'):
     if b: os.makedirs(f'{OUT}/nba', exist_ok=True); open(f'{OUT}/nba/schedule.json', 'wb').write(b)
     b = raw('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries', 'nba_inj_espn')
     if b: open(f'{OUT}/nba/injuries_espn.json', 'wb').write(b)
+    try:   # current rosters (ESPN) -> trades/signings/rookies for the roster-based game model
+        R = {}
+        for tid in list(range(1, 31)) + [0]:
+            if tid == 0: continue
+            b = raw(f'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/teams/{tid}/roster', 'nba_roster')
+            if not b: continue
+            j = json.loads(b); t = j.get('team', {})
+            R[t.get('abbreviation', str(tid))] = [dict(id=a.get('id'), name=a.get('displayName'), pos=(a.get('position') or {}).get('abbreviation'), exp=(a.get('experience') or {}).get('years'),
+                                                     inj=[i.get('status') for i in a.get('injuries', [])]) for a in j.get('athletes', [])]
+        json.dump(R, open(f'{OUT}/nba/rosters.json', 'w'))
+        LOG['calls'] = [c for c in LOG['calls'] if c.get('tag') != 'nba_roster'] + [dict(tag='nba_roster', teams=len(R))]
+    except Exception as e: LOG['errors'].append(dict(tag='nba_roster', err=str(e)[:200]))
     b = raw('https://cdn.nba.com/static/json/liveData/odds/odds_todaysGames.json', 'nba_odds_cdn')
     if b: open(f'{OUT}/nba/odds_cdn.json', 'wb').write(b)
     b = raw('https://official.nba.com/referee-assignments/', 'nba_refs')
