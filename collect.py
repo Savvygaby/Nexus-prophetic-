@@ -21,6 +21,9 @@ SPORTS = {
   'mlb': dict(key='baseball_mlb', days=REQ.get('mlb_days', 4), props=['batter_hits', 'batter_total_bases', 'batter_home_runs', 'batter_rbis', 'batter_runs_scored', 'batter_hits_runs_rbis',
            'batter_singles', 'batter_doubles', 'batter_walks', 'batter_stolen_bases', 'pitcher_strikeouts', 'pitcher_outs', 'pitcher_hits_allowed', 'pitcher_earned_runs', 'pitcher_walks',
            'batter_hits_alternate', 'batter_total_bases_alternate', 'batter_home_runs_alternate', 'pitcher_strikeouts_alternate'], extra=['h2h_1st_5_innings', 'totals_1st_5_innings']),
+  'nba': dict(key='basketball_nba', days=REQ.get('nba_days', 2), props=['player_points', 'player_rebounds', 'player_assists', 'player_threes', 'player_points_rebounds_assists',
+           'player_points_rebounds', 'player_points_assists', 'player_rebounds_assists', 'player_double_double', 'player_first_basket',
+           'player_points_alternate', 'player_rebounds_alternate', 'player_assists_alternate', 'player_threes_alternate', 'player_points_rebounds_assists_alternate']),
 }
 now = dt.datetime.utcnow()
 for sp, cfg in SPORTS.items():
@@ -46,6 +49,7 @@ for sp, cfg in SPORTS.items():
 WANT = ['KXNFLGAME', 'KXNFLSPREAD', 'KXNFLTOTAL', 'KXNFLTD', 'KXNFLANYTD', 'KXNFLREC', 'KXNFLRECYDS', 'KXNFLRSHYDS', 'KXNFLPASSYDS', 'KXNFLPASSTDS', 'KXNFLPASSATT',
         'KXNFLRSHATT', 'KXNFLTEAMTOTAL', 'KXNFLFIRSTTD', 'KXNFL1H', 'KXNFL1HSPREAD', 'KXNFL1HTOTAL',
         'KXMLBGAME', 'KXMLBSPREAD', 'KXMLBTOTAL', 'KXMLBF5', 'KXMLBF5TOTAL', 'KXMLBF5SPREAD', 'KXMLBTEAMTOTAL', 'KXMLBKS', 'KXMLBHIT', 'KXMLBTB', 'KXMLBHR', 'KXMLBHRR',
+        'KXNBAGAME', 'KXNBASPREAD', 'KXNBATOTAL', 'KXNBATEAMTOTAL', 'KXNBAPTS', 'KXNBAREB', 'KXNBAAST', 'KXNBA3PT', 'KXNBAPRA', 'KXNBAPR', 'KXNBAPA', 'KXNBARA', 'KXNBASTL', 'KXNBABLK',
         'KXMLBRBI', 'KXMLBOUTS', 'KXMLBSB', 'KXMLBWALK', 'KXMLBRFI', 'KXMLBERA', 'KXMLBHA', 'KXMLBWA', 'KXMLBSTAT', 'KXMLBPITCH', 'KXMLBSS', 'KXMLBSERIES']
 for ser in WANT:
     time.sleep(0.6)
@@ -255,6 +259,59 @@ if REQ.get('statcast_catchers'):
     except Exception as ex: LOG['errors'].append(dict(tag='statcast_catchers', err=str(ex)[:200]))
     save('manifest.json', LOG)
 
+
+
+# ======================= NBA keyless feeds (request.json 'nba': true): schedule, injuries (ESPN JSON + official PDF), referees, Polymarket =======================
+if REQ.get('nba'):
+    H = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Referer': 'https://www.nba.com/'}
+    def raw(url, tag, timeout=30):
+        try:
+            r = urllib.request.urlopen(urllib.request.Request(url, headers=H), timeout=timeout); b = r.read()
+            LOG['calls'].append(dict(tag=tag, status=r.status)); return b
+        except Exception as e:
+            LOG['errors'].append(dict(tag=tag, err=str(e)[:200])); return None
+    b = raw('https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json', 'nba_schedule')
+    if b: os.makedirs(f'{OUT}/nba', exist_ok=True); open(f'{OUT}/nba/schedule.json', 'wb').write(b)
+    b = raw('https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries', 'nba_inj_espn')
+    if b: open(f'{OUT}/nba/injuries_espn.json', 'wb').write(b)
+    b = raw('https://cdn.nba.com/static/json/liveData/odds/odds_todaysGames.json', 'nba_odds_cdn')
+    if b: open(f'{OUT}/nba/odds_cdn.json', 'wb').write(b)
+    b = raw('https://official.nba.com/referee-assignments/', 'nba_refs')
+    if b: open(f'{OUT}/nba/refs.html', 'wb').write(b)
+    # newest official injury report PDF: probe 15-minute slots back from now (ET)
+    try:
+        import zoneinfo; et = dt.datetime.now(zoneinfo.ZoneInfo('America/New_York'))
+        got = None
+        for k in range(0, 96):
+            t = et - dt.timedelta(minutes=15 * k); t = t.replace(minute=(t.minute // 15) * 15)
+            h12 = t.strftime('%I'); ap = t.strftime('%p')
+            for u in (f"https://ak-static.cms.nba.com/referee/injury/Injury-Report_{t:%Y-%m-%d}_{h12}_{t:%M}{ap}.pdf", f"https://ak-static.cms.nba.com/referee/injury/Injury-Report_{t:%Y-%m-%d}_{h12}{ap}.pdf"):
+                b = raw(u, 'nba_inj_pdf_probe', timeout=10)
+                if b and b[:4] == b'%PDF': got = (u, b); break
+            if got: break
+        if got:
+            open(f'{OUT}/nba/injury_report.pdf', 'wb').write(got[1]); json.dump({'url': got[0]}, open(f'{OUT}/nba/injury_report_meta.json', 'w'))
+            try:
+                import pdfplumber, io
+                with pdfplumber.open(io.BytesIO(got[1])) as pdf:
+                    txt = '\n'.join((pg.extract_text() or '') for pg in pdf.pages)
+                open(f'{OUT}/nba/injury_report.txt', 'w').write(txt)
+            except Exception as e: LOG['errors'].append(dict(tag='nba_inj_parse', err=str(e)[:200]))
+        LOG['calls'] = [c for c in LOG['calls'] if c.get('tag') != 'nba_inj_pdf_probe'][:]           # keep the log short
+        LOG['errors'] = [c for c in LOG['errors'] if c.get('tag') != 'nba_inj_pdf_probe']
+    except Exception as e: LOG['errors'].append(dict(tag='nba_inj_pdf', err=str(e)[:200]))
+    try:
+        tg = get('https://gamma-api.polymarket.com/tags/slug/nba', 'poly_nba_tag')
+        tid = (tg or {}).get('id')
+        if tid:
+            evs = []
+            for off in range(0, 500, 100):
+                e = get(f'https://gamma-api.polymarket.com/events?tag_id={tid}&closed=false&limit=100&offset={off}', f'poly_nba_{off}')
+                if not e: break
+                evs += e
+                if len(e) < 100: break
+            save('polymarket/nba_events.json', evs)
+    except Exception as e: LOG['errors'].append(dict(tag='poly_nba', err=str(e)[:200]))
 
 # ======================= Historical full-slate game lines (request.json 'hist_lines': {sport, dates, regions, markets, tag}) =======================
 HL = REQ.get('hist_lines')

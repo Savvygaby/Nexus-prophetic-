@@ -1,0 +1,35 @@
+name: kalshi-history-nba
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/kalshi_hist_nba.yml']
+permissions:
+  contents: write
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        series: [KXNBAPTS, KXNBAREB, KXNBAAST, KXNBA3PT, KXNBAPRA, KXNBAPR, KXNBAPA, KXNBARA, KXNBAGAME, KXNBASPREAD, KXNBATOTAL, KXNBATEAMTOTAL]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Collect
+        env:
+          SERIES: ${{ matrix.series }}
+          MAXM: "30000"
+        run: timeout 20400 python collect_kalshi_v3.py || true
+      - name: Push to data-kalshinba-<series>
+        if: always()
+        run: |
+          ls -la kalshi_hist || exit 0
+          B=$(echo "data-kalshinba-${{ matrix.series }}" | tr 'A-Z' 'a-z')
+          mkdir -p /tmp/kh && cp -r kalshi_hist /tmp/kh/ && cd /tmp/kh
+          git init -q && git checkout -q -b "$B"
+          git add kalshi_hist && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "kalshi v3 ${{ matrix.series }} $(date -u +%Y%m%d)"
+          git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" "$B"
