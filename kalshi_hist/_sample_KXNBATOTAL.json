@@ -1,0 +1,20 @@
+{
+ "KXNBATOTAL": {
+  "end_period_ts": 1792209600,
+  "open_interest_fp": "0.00",
+  "price": {},
+  "volume_fp": "0.00",
+  "yes_ask": {
+   "close_dollars": "0.6200",
+   "high_dollars": "0.9900",
+   "low_dollars": "0.6200",
+   "open_dollars": "0.9900"
+  },
+  "yes_bid": {
+   "close_dollars": "0.2300",
+   "high_dollars": "0.2700",
+   "low_dollars": "0.0000",
+   "open_dollars": "0.0000"
+  }
+ }
+}
