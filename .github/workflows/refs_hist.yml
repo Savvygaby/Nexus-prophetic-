@@ -1,0 +1,25 @@
+name: nba-refs-history
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/refs_hist.yml', 'refs_hist.py']
+permissions:
+  contents: write
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch
+        run: python refs_hist.py
+      - name: Push to data-nbarefs
+        if: always()
+        run: |
+          mkdir -p /tmp/r && cp refs_hist.csv /tmp/r/ && cd /tmp/r
+          git init -q && git checkout -q -b data-nbarefs
+          git add refs_hist.csv && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "nba refs $(date -u +%Y%m%d)"
+          git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data-nbarefs
