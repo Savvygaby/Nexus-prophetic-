@@ -1,4 +1,4 @@
-Injury Report: 10/22/26 02:15 AM
+Injury Report: 10/22/26 10:45 AM
 GameDate GameTime Matchup Team PlayerName CurrentStatus Reason
 Injury/Illness-RightPatellar
 10/22/2026 07:00(ET) CLE@PHI ClevelandCavaliers Allen,Jarrett Questionable
@@ -28,7 +28,7 @@ Sorber,Thomas Out Injury/Illness-RightKneeSurgery
 Topic,Nikola Out Injury/Illness-LowBackSurgery
 10/23/2026 04:00(ET) CHI@MIL ChicagoBulls NOTYETSUBMITTED
 Page1of3
-Injury Report: 10/22/26 02:15 AM
+Injury Report: 10/22/26 10:45 AM
 MilwaukeeBucks NOTYETSUBMITTED
 07:00(ET) ATL@CHA AtlantaHawks NOTYETSUBMITTED
 CharlotteHornets NOTYETSUBMITTED
@@ -49,7 +49,7 @@ UtahJazz NOTYETSUBMITTED
 10:00(ET) LAC@LAL LAClippers NOTYETSUBMITTED
 LosAngelesLakers NOTYETSUBMITTED
 Page2of3
-Injury Report: 10/22/26 02:15 AM
+Injury Report: 10/22/26 10:45 AM
 MEM@GSW MemphisGrizzlies NOTYETSUBMITTED
 GoldenStateWarriors NOTYETSUBMITTED
 POR@SAC PortlandTrailBlazers NOTYETSUBMITTED
