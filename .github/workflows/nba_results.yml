@@ -1,0 +1,20 @@
+name: nba-results
+on:
+  workflow_dispatch:
+  push:
+    paths: ['nba_results.py', '.github/workflows/nba_results.yml']
+permissions:
+  contents: write
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: python nba_results.py 20261020 20261021
+      - name: push
+        run: |
+          mkdir -p /tmp/r && cp nba_results.csv /tmp/r/ && cd /tmp/r && git init -q && git checkout -q -b data-nbaresults
+          git add . && git -c user.name=data-bot -c user.email=data-bot@users.noreply.github.com commit -qm "nba results $(date -u +%Y%m%dT%H%M)"
+          git push -fq "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" data-nbaresults
