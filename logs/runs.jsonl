@@ -80,3 +80,4 @@
 {"t": "20261025T0438Z", "ok": ["splits p1 315522", "splits p2 213061", "splits p3 212934", "splits p4 212980", "injuries 8745759", "injuries_cdn 1987", "news 204294"], "err": []}
 {"t": "20261025T1123Z", "ok": ["splits p1 326703", "splits p2 212972", "splits p3 212937", "splits p4 212605", "injuries 8745767", "injuries_cdn 1992", "news 212153"], "err": []}
 {"t": "20261025T1615Z", "ok": ["splits p1 333976", "splits p2 195837", "splits p3 195802", "splits p4 195878", "injuries 8738027", "injuries_cdn 1987", "news 226476"], "err": []}
+{"t": "20261025T1833Z", "ok": ["splits p1 236525", "splits p2 236608", "splits p3 236525", "splits p4 212605", "injuries 8744977", "injuries_cdn 1992", "news 216640"], "err": []}
