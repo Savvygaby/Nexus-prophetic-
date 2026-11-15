@@ -151,3 +151,4 @@
 {"t": "20261114T2221Z", "ok": ["splits p1 364581", "splits p2 239743", "splits p3 239708", "splits p4 239708", "injuries 8799554", "injuries_cdn 1987", "news 200058"], "err": []}
 {"t": "20261115T0625Z", "ok": ["splits p1 371481", "splits p2 241100", "splits p3 241065", "splits p4 241065", "injuries 8807801", "injuries_cdn 1987", "news 199402"], "err": []}
 {"t": "20261115T1620Z", "ok": ["splits p1 375432", "splits p2 219095", "splits p3 219060", "splits p4 219060", "injuries 8805287", "injuries_cdn 1987", "news 208784"], "err": []}
+{"t": "20261115T2035Z", "ok": ["splits p1 265328", "splits p2 265328", "splits p3 265328", "splits p4 265328", "injuries 8758122", "injuries_cdn 1987", "news 240402"], "err": []}
